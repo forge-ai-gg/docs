@@ -13,7 +13,7 @@
       "dark": "#0C0B09"
     }
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/forgeai-icon-colored.png",
   "navigation": {
     "tabs": [
       {
@@ -68,8 +68,13 @@
       "anchors": [
         {
           "anchor": "Platform",
-          "href": "https://forgeai.gg",
+          "href": "https://app.forgeai.gg",
           "icon": "rocket"
+        },
+        {
+          "anchor": "Website",
+          "href": "https://forgeai.gg",
+          "icon": "browser"
         }
       ]
     }
@@ -88,7 +93,7 @@
     "primary": {
       "type": "button",
       "label": "Launch App",
-      "href": "https://forgeai.gg"
+      "href": "https://app.forgeai.gg"
     }
   },
   "contextual": {
