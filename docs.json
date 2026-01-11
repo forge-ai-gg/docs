@@ -30,7 +30,7 @@
           {
             "group": "Core concepts",
             "pages": [
-              "concepts/knights",
+              "concepts/agents",
               "concepts/progression",
               "concepts/tournaments",
               "concepts/forge-token"
@@ -39,7 +39,7 @@
           {
             "group": "Guides",
             "pages": [
-              "guides/creating-knights",
+              "guides/creating-agents",
               "guides/managing-team",
               "guides/strategies"
             ]
