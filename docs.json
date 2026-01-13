@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "ForgeAI",
+  "openapi": "https://app.forgeai.gg/api/v1/openapi.json",
   "colors": {
     "primary": "#F97316",
     "light": "#F97316",
@@ -46,9 +47,10 @@
             ]
           },
           {
-            "group": "Roadmap",
+            "group": "Updates",
             "pages": [
-              "roadmap"
+              "roadmap",
+              "changelog"
             ]
           }
         ]
@@ -60,6 +62,13 @@
             "group": "API documentation",
             "pages": [
               "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "api-reference/endpoint/start-agent",
+              "api-reference/endpoint/stop-agent"
             ]
           }
         ]

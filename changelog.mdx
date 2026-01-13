@@ -1,0 +1,37 @@
+---
+title: "Changelog"
+description: "Track the latest updates, features, and improvements to ForgeAI. Our changelog is automatically updated with each production deployment."
+---
+
+import changelog from './changelog.json';
+
+# Changelog
+
+Stay up to date with the latest changes to ForgeAI. This changelog is automatically generated from our production deployments.
+
+<Info>
+  **Last updated:** {new Date(changelog.generatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+</Info>
+
+{changelog.weeks.map((week) => (
+  <div key={week.weekOf}>
+    <h2>{week.label}</h2>
+    <AccordionGroup>
+      {week.entries.map((entry, index) => (
+        <Accordion 
+          key={`${week.weekOf}-${index}`} 
+          title={entry.description}
+          icon={entry.prNumber ? "code-pull-request" : "code"}
+        >
+          <div>
+            <p><strong>Date:</strong> {entry.date}</p>
+            {entry.prNumber && <p><strong>PR:</strong> #{entry.prNumber}</p>}
+            {entry.files && (
+              <p><strong>Scope:</strong> {entry.files} {entry.files === 1 ? 'file' : 'files'} changed, {entry.linesChanged.toLocaleString()} lines modified</p>
+            )}
+          </div>
+        </Accordion>
+      ))}
+    </AccordionGroup>
+  </div>
+))}

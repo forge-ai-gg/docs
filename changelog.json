@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-01-13T00:00:00.000Z",
+  "branch": "main",
+  "totalCommits": 0,
+  "weeksCount": 1,
+  "weeks": [
+    {
+      "weekOf": "2026-01-13",
+      "label": "Week of 2026-01-13",
+      "entries": [
+        {
+          "date": "Jan 13, 2026",
+          "isoDate": "2026-01-13T00:00:00.000Z",
+          "prNumber": null,
+          "files": null,
+          "linesChanged": null,
+          "insertions": null,
+          "deletions": null,
+          "description": "Changelog auto-sync initialized. Updates will appear after the next production deployment.",
+          "hash": "placeholder"
+        }
+      ]
+    }
+  ]
+}

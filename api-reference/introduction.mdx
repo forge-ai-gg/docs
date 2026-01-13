@@ -1,33 +1,30 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'API Reference for the ForgeAI Public REST API'
 ---
-
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+The ForgeAI Public API allows external applications to interact with ForgeAI agents, including starting and stopping agent trading activity.
 
 <Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  title="API Specification"
+  icon="file-code"
+  href="https://app.forgeai.gg/api/v1/openapi.json"
 >
-  View the OpenAPI specification file
+  View the raw OpenAPI 3.0 specification file
 </Card>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API endpoints are authenticated using Bearer tokens (Privy JWTs). You can obtain these tokens by authenticating with Privy in your application and calling `getAccessToken()`.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+```bash
+Authorization: Bearer <your-privy-jwt-token>
 ```
+
+For browser-based requests, the token can also be sent via the `privy-token` cookie.
+
+## Rate Limiting
+
+The Public API is currently in beta. Please ensure your application handles `429 Too Many Requests` responses gracefully.
