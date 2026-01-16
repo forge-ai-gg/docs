@@ -14,24 +14,17 @@ Stay up to date with the latest changes to ForgeAI. This changelog is automatica
 </Info>
 
 {changelog.weeks.map((week) => (
-  <div key={week.weekOf}>
+  <div key={week.weekEnding}>
     <h2>{week.label}</h2>
-    <AccordionGroup>
-      {week.entries.map((entry, index) => (
-        <Accordion 
-          key={`${week.weekOf}-${index}`} 
-          title={entry.description}
-          icon={entry.prNumber ? "code-pull-request" : "code"}
-        >
-          <div>
-            <p><strong>Date:</strong> {entry.date}</p>
-            {entry.prNumber && <p><strong>PR:</strong> #{entry.prNumber}</p>}
-            {entry.files && (
-              <p><strong>Scope:</strong> {entry.files} {entry.files === 1 ? 'file' : 'files'} changed, {entry.linesChanged.toLocaleString()} lines modified</p>
-            )}
-          </div>
-        </Accordion>
-      ))}
-    </AccordionGroup>
+    {week.days.map((day) => (
+      <div key={day.date}>
+        <h3>{day.label}</h3>
+        <ul>
+          {day.entries.map((entry, index) => (
+            <li key={`${day.date}-${index}`}>{entry.description}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
 ))}
