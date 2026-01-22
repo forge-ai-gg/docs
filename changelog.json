@@ -1,19 +1,2338 @@
 {
-  "generatedAt": "2026-01-13T00:00:00.000Z",
+  "generatedAt": "2026-01-22T18:57:46.443Z",
   "branch": "main",
-  "totalCommits": 0,
-  "weeksCount": 1,
+  "totalCommits": 582,
+  "weeksCount": 38,
   "weeks": [
     {
-      "weekEnding": "2026-01-19",
-      "label": "Week Ending 2026-01-19",
+      "weekEnding": "2026-01-25",
+      "label": "Week Ending 2026-01-25",
       "days": [
+        {
+          "date": "2026-01-22",
+          "label": "January 22, 2026",
+          "entries": [
+            {
+              "description": "chore: update .gitignore and pnpm-lock.yaml, enhance error logging in…"
+            },
+            {
+              "description": "Fix/build issues 3"
+            },
+            {
+              "description": "refactor: improve type safety and import organization in achievement …"
+            },
+            {
+              "description": "feat: enhance performance tracking and type safety in game components"
+            },
+            {
+              "description": "Fix/unit tests 2"
+            },
+            {
+              "description": "feat: enhance agent deletion process and improve database indexing"
+            },
+            {
+              "description": "Fix/unit tests"
+            },
+            {
+              "description": "chore: update vitest configuration for improved memory management"
+            },
+            {
+              "description": "test: enhance processTournamentPayout validation tests"
+            },
+            {
+              "description": "chore: update GitHub Actions workflow to use enhanced runner and setu…"
+            },
+            {
+              "description": "feat: implement funding pending banner and enhance agent creation flow"
+            },
+            {
+              "description": "Feat/improve agent creation flow"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-21",
+          "label": "January 21, 2026",
+          "entries": [
+            {
+              "description": "Back Navigation Links Implementation"
+            },
+            {
+              "description": "Glass Styling Consolidation - Unified Glass Morphism Design System"
+            },
+            {
+              "description": "chore: optimize vitest configuration and enhance test cleanup"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-20",
+          "label": "January 20, 2026",
+          "entries": [
+            {
+              "description": "fix: resolve linter and typescript errors across chat api and tests"
+            },
+            {
+              "description": "Enhance performance tracking and agent schema with achievement models…"
+            },
+            {
+              "description": "Fix Global Leaderboard Feature"
+            },
+            {
+              "description": "Review Performance Tracking Systems"
+            },
+            {
+              "description": "Tournament Payout Flow Enhancement"
+            },
+            {
+              "description": "Agent Chat SDK 6 Improvements - Modern Patterns & Tool Calling"
+            },
+            {
+              "description": "Tournament Chart Replay Controls"
+            },
+            {
+              "description": "Agent Execution Cycle Bug Fixes"
+            },
+            {
+              "description": "Agent Achievement System"
+            },
+            {
+              "description": "065-add-actionsmenu-to-activitylistitem"
+            },
+            {
+              "description": "Feat/improve action detail"
+            },
+            {
+              "description": "Feat/improve tournament charting features"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-19",
+          "label": "January 19, 2026",
+          "entries": [
+            {
+              "description": "Review Performance Tracking Systems"
+            },
+            {
+              "description": "Review Vercel AI SDK 6 Agent Loop Implementation for Trading Issues"
+            },
+            {
+              "description": "Increase Pagination Button Touch Targets"
+            },
+            {
+              "description": "Remove Distracting Input Focus Animation"
+            },
+            {
+              "description": "Add tRPC Query Result Caching Middleware"
+            },
+            {
+              "description": "QueryStateWrapper Component for Data Fetching"
+            },
+            {
+              "description": "Enhance Dialog Close Button Visibility"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2026-01-18",
+      "label": "Week Ending 2026-01-18",
+      "days": [
+        {
+          "date": "2026-01-18",
+          "label": "January 18, 2026",
+          "entries": [
+            {
+              "description": "Add metadata field to tournament response in GET endpoint"
+            },
+            {
+              "description": "Enhance API key authentication middleware and OpenAPI specifications"
+            },
+            {
+              "description": "Update changelog script to use .cjs extension in GitHub Actions workflow"
+            },
+            {
+              "description": "Refactor debug logging in API key verification middleware"
+            },
+            {
+              "description": "Add temporary debug logging for API key verification in middleware"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-17",
+          "label": "January 17, 2026",
+          "entries": [
+            {
+              "description": "Add API key authentication middleware and update OpenAPI specifications"
+            },
+            {
+              "description": "Remove .auto-claude-security.json file, update changelog script to us…"
+            },
+            {
+              "description": "Refactor imports for consistency and remove unused imports in various…"
+            },
+            {
+              "description": "Downgrade Next.js and related packages to version 15.4.6 in package.j…"
+            },
+            {
+              "description": "Update dependencies in pnpm-lock.yaml, add '@ai-sdk/react' version 3.…"
+            },
+            {
+              "description": "Chore/fix 403 auth issues"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-16",
+          "label": "January 16, 2026",
+          "entries": [
+            {
+              "description": "Add test coverage for critical balanceTracking services"
+            },
+            {
+              "description": "Split monolithic balanceHistory.ts into domain-specific modules"
+            },
+            {
+              "description": "Optimize chart component re-renders with proper memoization"
+            },
+            {
+              "description": "Create architecture documentation for trading system and agent cycle"
+            },
+            {
+              "description": "Implement consistent React Query staleTime for token/price data"
+            },
+            {
+              "description": "Replace generic Next.js README with ForgeAI-specific documentation"
+            },
+            {
+              "description": "Add list virtualization for agent tables and position lists"
+            },
+            {
+              "description": "Add Contextual Empty State Actions"
+            },
+            {
+              "description": "Add Skip Navigation Link"
+            },
+            {
+              "description": "Unified Agent Chat MVP with Vercel AI SDK"
+            },
+            {
+              "description": "Implement changelog synchronization in GitHub Actions workflow and en…"
+            },
+            {
+              "description": "Refactor Agent Details Page and Add Tournament API Schemas"
+            },
+            {
+              "description": "Action Detail Page Redesign"
+            },
+            {
+              "description": "Enhance image generation functionality with meme support"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-15",
+          "label": "January 15, 2026",
+          "entries": [
+            {
+              "description": "Fix/build issues"
+            },
+            {
+              "description": "Feat/improve subheader layouts"
+            }
+          ]
+        },
         {
           "date": "2026-01-13",
           "label": "January 13, 2026",
           "entries": [
             {
-              "description": "Changelog auto-sync initialized. Updates will appear after the next production deployment."
+              "description": "Update .gitignore, ESLint config, and package dependencies; remove ob…"
+            },
+            {
+              "description": "Implement Vercel AI SDK 6 Tool Loop Pattern"
+            },
+            {
+              "description": "Global Leaderboard with Multiple Timeframes"
+            },
+            {
+              "description": "Driver.js Onboarding Tour"
+            },
+            {
+              "description": "Drift Protocol Mage Agent Integration"
+            },
+            {
+              "description": "chore: update dependencies for Twilio and web-push, add type definiti…"
+            },
+            {
+              "description": "Create and Fund Agent in Single Step"
+            },
+            {
+              "description": "Notification Infrastructure for Position Events"
+            },
+            {
+              "description": "Performance Stats Accuracy Audit"
+            },
+            {
+              "description": "Tournament Payout Flow Testing & Validation"
+            },
+            {
+              "description": "Reduce daily tournament scheduling from 28 days to 7 days"
+            },
+            {
+              "description": "Fix Balance Chart PnL Data Consistency"
+            },
+            {
+              "description": "Review Backfill Wallet Balance Feature"
+            },
+            {
+              "description": "refactor: optimize balance retrieval and improve tournament card comp…"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-12",
+          "label": "January 12, 2026",
+          "entries": [
+            {
+              "description": "021 improve tournament cards"
+            },
+            {
+              "description": "feat: implement batch agent statistics retrieval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2026-01-11",
+      "label": "Week Ending 2026-01-11",
+      "days": [
+        {
+          "date": "2026-01-11",
+          "label": "January 11, 2026",
+          "entries": [
+            {
+              "description": "fix: enhance logger server runtime detection"
+            },
+            {
+              "description": "019 improve game state for tournaments"
+            },
+            {
+              "description": "022 establish public rest api pattern"
+            },
+            {
+              "description": "- Implemented POST /api/v1/agents/[agentId]/start to activate an agent's trading schedule, including permission validation, SOL to USDC conversion, and EventBridge scheduling."
+            },
+            {
+              "description": "feat: enhance AppearanceOptions component with category grouping and …"
+            },
+            {
+              "description": "011 tournament performance recording fix"
+            },
+            {
+              "description": "- Added a new API route to capture balance snapshots for participants in tournaments that started within the last hour, ensuring accurate baseline balances for leaderboard calculations."
+            },
+            {
+              "description": "015 i want you to look at the tournament card that"
+            },
+            {
+              "description": "016 modify the nightly job schedule that is responsib"
+            },
+            {
+              "description": "feat: enhance tooltip and hover card components for touch device support"
+            },
+            {
+              "description": "feat: update integration testing and error handling for balance charts"
+            },
+            {
+              "description": "Feat/add more integrations"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-10",
+          "label": "January 10, 2026",
+          "entries": [
+            {
+              "description": "fix: improve documentation and security logging"
+            },
+            {
+              "description": "fix: logger and generate agent"
+            },
+            {
+              "description": "Fix/improve slow db queries"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-07",
+          "label": "January 7, 2026",
+          "entries": [
+            {
+              "description": "refactor: update agent retrieval logic and improve performance"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-06",
+          "label": "January 6, 2026",
+          "entries": [
+            {
+              "description": "feat: add overall responsive adjustments for agents, layout, organization and shared components"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-05",
+          "label": "January 5, 2026",
+          "entries": [
+            {
+              "description": "Enhance API response for generated images to include associated agent…"
+            },
+            {
+              "description": "Enhance Agent PnL Changes and Update E2E Tests"
+            },
+            {
+              "description": "Refactor Auth Layout and Update E2E Tests"
+            },
+            {
+              "description": "Chore/fix e2e tests12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2026-01-04",
+      "label": "Week Ending 2026-01-04",
+      "days": [
+        {
+          "date": "2026-01-04",
+          "label": "January 4, 2026",
+          "entries": [
+            {
+              "description": "Chore/fix e2e tests 10"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-02",
+          "label": "January 2, 2026",
+          "entries": [
+            {
+              "description": "Feat/implement tournament payouts"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-30",
+          "label": "December 30, 2025",
+          "entries": [
+            {
+              "description": "Merge remote-tracking branch 'origin/main' into feat/responsive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-12-21",
+      "label": "Week Ending 2025-12-21",
+      "days": [
+        {
+          "date": "2025-12-20",
+          "label": "December 20, 2025",
+          "entries": [
+            {
+              "description": "fix: Update error messages for improved user experience"
+            },
+            {
+              "description": "Fix/balance calcs"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-18",
+          "label": "December 18, 2025",
+          "entries": [
+            {
+              "description": "fix: Update social share image references from PNG to JPG"
+            },
+            {
+              "description": "Feat/agent health indicator improvements"
+            },
+            {
+              "description": "Feat/improve twitter fields"
+            },
+            {
+              "description": "Feat/add x com integration settings"
+            },
+            {
+              "description": "refactor: Enhance tournament leaderboard calculations and agent healt…"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-17",
+          "label": "December 17, 2025",
+          "entries": [
+            {
+              "description": "refactor: Optimize agent caching and leaderboard retrieval"
+            },
+            {
+              "description": "Chore/fix e2e tests 8"
+            },
+            {
+              "description": "refactor: Remove tournament activity filtering end-to-end test"
+            },
+            {
+              "description": "feat: Enhance testing and performance tracking features"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-16",
+          "label": "December 16, 2025",
+          "entries": [
+            {
+              "description": "Chore/fix e2e tests 7"
+            },
+            {
+              "description": "Feat/improve tournament payout features"
+            },
+            {
+              "description": "test: Improve comment clarity in agent strategy tab end-to-end test"
+            },
+            {
+              "description": "refactor: Enhance tournament agent actions retrieval and improve pric…"
+            },
+            {
+              "description": "test: Update account menu references in end-to-end tests"
+            },
+            {
+              "description": "chore: Clean up code and improve type safety in various components"
+            },
+            {
+              "description": "chore: Update changelog and enhance maintenance job tracking"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-12-14",
+      "label": "Week Ending 2025-12-14",
+      "days": [
+        {
+          "date": "2025-12-14",
+          "label": "December 14, 2025",
+          "entries": [
+            {
+              "description": "test: Update tournament creation form visibility logic for admin users"
+            },
+            {
+              "description": "Feat/improved agent balance snapshots"
+            },
+            {
+              "description": "Feat/improve tournament flows add auto router"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-11",
+          "label": "December 11, 2025",
+          "entries": [
+            {
+              "description": "Feat/switch to helius"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-10",
+          "label": "December 10, 2025",
+          "entries": [
+            {
+              "description": "Chore/performance improvements"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-09",
+          "label": "December 9, 2025",
+          "entries": [
+            {
+              "description": "Feat/improve paper trading price indexing tournaments"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-08",
+          "label": "December 8, 2025",
+          "entries": [
+            {
+              "description": "refactor: Update agent action types and improve metadata handling"
+            },
+            {
+              "description": "feat: Enhance agent actions and image generation capabilities"
+            },
+            {
+              "description": "feat: Implement paper trading functionality for agents"
+            },
+            {
+              "description": "Feature/for 431 bring back leaderboard page"
+            },
+            {
+              "description": "Feature/for 368 implement credits system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-12-07",
+      "label": "Week Ending 2025-12-07",
+      "days": [
+        {
+          "date": "2025-12-06",
+          "label": "December 6, 2025",
+          "entries": [
+            {
+              "description": "Feat/credits referrals rbac fees history"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-05",
+          "label": "December 5, 2025",
+          "entries": [
+            {
+              "description": "chore: Update pnpm-lock.yaml with dependency changes"
+            },
+            {
+              "description": "Feat/improve quick create agent option"
+            },
+            {
+              "description": "feat: Enhance agent settings and tournament management features"
+            },
+            {
+              "description": "Feat/add privy auth"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-04",
+          "label": "December 4, 2025",
+          "entries": [
+            {
+              "description": "refactor: Standardize formatting and improve readability in ActivityL…"
+            },
+            {
+              "description": "refactor: Simplify ActivityListItem component and remove unused actio…"
+            },
+            {
+              "description": "chore: Enhance dev script to build database package before fetching S…"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-03",
+          "label": "December 3, 2025",
+          "entries": [
+            {
+              "description": "test: Enhance e2e tests for agent exploration journey"
+            },
+            {
+              "description": "refactor: Update agent creation and balance tracking components"
+            },
+            {
+              "description": "chore: adjust responsive for agents?myAgents page"
+            },
+            {
+              "description": "Merge remote-tracking branch 'origin/main' into chore/FOR-407-fixes"
+            },
+            {
+              "description": "Feat/improve tournament registration"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-02",
+          "label": "December 2, 2025",
+          "entries": [
+            {
+              "description": "Chore/fix e2e tests 2"
+            },
+            {
+              "description": "feat: Enhance strategy configuration and dashboard components"
+            },
+            {
+              "description": "Feat/implement health monitoring tools"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-01",
+          "label": "December 1, 2025",
+          "entries": [
+            {
+              "description": "feat: Enhance strategy configuration with improved component structur…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-11-30",
+      "label": "Week Ending 2025-11-30",
+      "days": [
+        {
+          "date": "2025-11-30",
+          "label": "November 30, 2025",
+          "entries": [
+            {
+              "description": "chore: Clean up code by removing unnecessary whitespace and comments"
+            },
+            {
+              "description": "feat: Update agent exploration journey tests for owner-only tab visib…"
+            },
+            {
+              "description": "Feat/enable multistrategy selection"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-29",
+          "label": "November 29, 2025",
+          "entries": [
+            {
+              "description": "feat: implement agent strategy assignment details"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-28",
+          "label": "November 28, 2025",
+          "entries": [
+            {
+              "description": "refactor: Remove leaderboard navigation test from e2e tests"
+            },
+            {
+              "description": "feat: Introduce new IndicatorSparkline and IndicatorValuesMatrix comp…"
+            },
+            {
+              "description": "feat: Update token deletion process and confirmation dialog"
+            },
+            {
+              "description": "Chore/combine leaderboard and agents list"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-27",
+          "label": "November 27, 2025",
+          "entries": [
+            {
+              "description": "feat: implement agent pnl indicators"
+            },
+            {
+              "description": "fix: refactor NavigationProgress component for improved state management"
+            },
+            {
+              "description": "Implement navigation feedback system"
+            },
+            {
+              "description": "feat: Enhance token management with CRUD operations and DexScreener i…"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-26",
+          "label": "November 26, 2025",
+          "entries": [
+            {
+              "description": "Feat/implement banner image cropping"
+            },
+            {
+              "description": "Improve unit test coverage for critical modules"
+            },
+            {
+              "description": "Feat/implement banner image cropping"
+            },
+            {
+              "description": "Feat/improve token price indexing"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-25",
+          "label": "November 25, 2025",
+          "entries": [
+            {
+              "description": "Chore/improve error handling"
+            },
+            {
+              "description": "chore: improve error handling"
+            },
+            {
+              "description": "chore: update dependencies and enhance Sentry integration"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-24",
+          "label": "November 24, 2025",
+          "entries": [
+            {
+              "description": "chore: fix perms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-11-23",
+      "label": "Week Ending 2025-11-23",
+      "days": [
+        {
+          "date": "2025-11-23",
+          "label": "November 23, 2025",
+          "entries": [
+            {
+              "description": "Revert \"Merge pull request #433 from forge-ai-gg/chore/fix-eventbridg…"
+            },
+            {
+              "description": "refactor: Update EventBridge Scheduler management permissions and Lam…"
+            },
+            {
+              "description": "chore: Remove debug build step from test pipeline and update deployme…"
+            },
+            {
+              "description": "chore: Enhance test pipeline with debug build for Price Indexer"
+            },
+            {
+              "description": "chore: Update dependencies and refactor Price Indexer fetchers"
+            },
+            {
+              "description": "Chore/fix email sending functions"
+            },
+            {
+              "description": "chore: Update .dockerignore and Dockerfile for image generation impro…"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-22",
+          "label": "November 22, 2025",
+          "entries": [
+            {
+              "description": "test: Improve e2e navigation and tournament detail tests"
+            },
+            {
+              "description": "refactor: Update TournamentsSection to default to table view and impr…"
+            },
+            {
+              "description": "Fix tournament edit form issues"
+            },
+            {
+              "description": "chore: Clean up .dockerignore and update Dockerfile for image generation"
+            },
+            {
+              "description": "feat: Enhance agent details layout with responsive tabs and sidebar"
+            },
+            {
+              "description": "Chore/fix build pipeline image gen"
+            },
+            {
+              "description": "Feat/agent tabs to sidebar"
+            },
+            {
+              "description": "chore: fix tests"
+            },
+            {
+              "description": "refactor: Enhance Price Indexer and Token Detail components"
+            },
+            {
+              "description": "refactor: Remove partitioning logic for price data"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-21",
+          "label": "November 21, 2025",
+          "entries": [
+            {
+              "description": "chore: Update pnpm-lock.yaml for dependency version adjustments"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-20",
+          "label": "November 20, 2025",
+          "entries": [
+            {
+              "description": "chore: Update pnpm-lock.yaml for dependency version adjustments"
+            },
+            {
+              "description": "Feat/add token detail charts"
+            },
+            {
+              "description": "Feat/add agent class selection"
+            },
+            {
+              "description": "refactor: Simplify Dockerfiles for image-generation and price-indexer"
+            },
+            {
+              "description": "refactor: Implement multi-stage builds for image-generation and price…"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "label": "November 19, 2025",
+          "entries": [
+            {
+              "description": "refactor: Update Dockerfile paths and improve dependency management f…"
+            },
+            {
+              "description": "feat: Enhance image generation capabilities and update README"
+            },
+            {
+              "description": "fix: Update imports and simplify price decimal calculation in TokenDe…"
+            },
+            {
+              "description": "Implement token detail page and route"
+            },
+            {
+              "description": "feat: Enhance position filtering and improve transaction handling"
+            },
+            {
+              "description": "Smooth agent movement in game scene"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-18",
+          "label": "November 18, 2025",
+          "entries": [
+            {
+              "description": "Feature/for 380 setup new 1m price indexer"
+            },
+            {
+              "description": "Feat/add force indexing column"
+            },
+            {
+              "description": "Feat/add price indexer db tables"
+            },
+            {
+              "description": "chore: update pnpm-lock.yaml and remove obsolete image-generation pac…"
+            },
+            {
+              "description": "Add email resend action to admin table"
+            },
+            {
+              "description": "refactor: migrate image generation functionality to a standalone package"
+            },
+            {
+              "description": "refactor: restructure app stack for improved modularity and maintaina…"
+            },
+            {
+              "description": "feat: invalidate agent cache after starting an agent"
+            },
+            {
+              "description": "Fix broken email sending function"
+            },
+            {
+              "description": "Fix activity feed scrolling bug"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-17",
+          "label": "November 17, 2025",
+          "entries": [
+            {
+              "description": "Refactor agent generation to use LLM"
+            },
+            {
+              "description": "Feat/improve image gen and version indicator"
+            },
+            {
+              "description": "Sanitize markdown output for action text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-11-16",
+      "label": "Week Ending 2025-11-16",
+      "days": [
+        {
+          "date": "2025-11-16",
+          "label": "November 16, 2025",
+          "entries": [
+            {
+              "description": "fix: format profit amount in closeAllPositionsAction"
+            },
+            {
+              "description": "refactor: remove image upload functionality and related tests"
+            },
+            {
+              "description": "chore: update CI/CD workflows to use ARM architecture for consistency…"
+            },
+            {
+              "description": "fix: remove DOCKER_BUILDKIT=0 to enable BuildKit for multi-platform b…"
+            },
+            {
+              "description": "feat: add force inactive tokens list and update token handling logic"
+            },
+            {
+              "description": "Feat/improve pipelines"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "label": "November 15, 2025",
+          "entries": [
+            {
+              "description": "chore: remove \"type\" field from package.json to streamline configuration"
+            },
+            {
+              "description": "Feat/improve pipelines"
+            },
+            {
+              "description": "chore: fix pipelines"
+            },
+            {
+              "description": "chore: comment out test, build, and e2e jobs in GitHub Actions workfl…"
+            },
+            {
+              "description": "feat: add production deployment workflow and setup documentation for …"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-13",
+          "label": "November 13, 2025",
+          "entries": [
+            {
+              "description": "chore: fix the tests"
+            },
+            {
+              "description": ".github/workflows: Migrate workflows to Blacksmith runners"
+            },
+            {
+              "description": "chore: update test pipeline to use ubuntu-latest runner"
+            },
+            {
+              "description": "chore: update pipeline config"
+            },
+            {
+              "description": "refactor: Replace UnderConstructionPage with ComingSoonPage"
+            },
+            {
+              "description": "Feat/add under construction"
+            },
+            {
+              "description": "fix: Ensure ActionMarkdown component handles undefined children grace…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-11-09",
+      "label": "Week Ending 2025-11-09",
+      "days": [
+        {
+          "date": "2025-11-07",
+          "label": "November 7, 2025",
+          "entries": [
+            {
+              "description": "feat: Enhance environment configuration and balance tracking"
+            },
+            {
+              "description": "Implement markdown for agent action content"
+            },
+            {
+              "description": "Fix default activities query not returning data"
+            },
+            {
+              "description": "Refactor agent form character attributes panel"
+            },
+            {
+              "description": "Fix stuck toast notification when stopping agent"
+            },
+            {
+              "description": "Create admin activity table"
+            },
+            {
+              "description": "Design agent balance tracking architecture"
+            },
+            {
+              "description": "Display trading chart times in user timezone"
+            },
+            {
+              "description": "Investigate KDJ strategy backtesting accuracy"
+            },
+            {
+              "description": "Fix font loading on image overlay"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-06",
+          "label": "November 6, 2025",
+          "entries": [
+            {
+              "description": "Feat/fix image font loading"
+            },
+            {
+              "description": "Feat/add saving of appearance form"
+            },
+            {
+              "description": "Create api endpoints for positions and agents"
+            },
+            {
+              "description": "Revert \"Merge pull request #320 from forge-ai-gg/fix/font-issues-on-i…"
+            },
+            {
+              "description": "Fix/font issues on image generator"
+            },
+            {
+              "description": "Feat/move from env to ssm"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-05",
+          "label": "November 5, 2025",
+          "entries": [
+            {
+              "description": "Feat/character customizer utility"
+            },
+            {
+              "description": "Fix/fix e2e tests"
+            },
+            {
+              "description": "Feat/improve token loading"
+            },
+            {
+              "description": "Refactor AdminRecentErrors and AgentActivityList components"
+            },
+            {
+              "description": "Plan admin dashboard with reporting"
+            },
+            {
+              "description": "Optimize database queries and structure"
+            },
+            {
+              "description": "Security audit for production launch"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-04",
+          "label": "November 4, 2025",
+          "entries": [
+            {
+              "description": "Fix responsive ui for mobile"
+            },
+            {
+              "description": "Review and secure system admin permissions"
+            },
+            {
+              "description": "Develop ai model comparison dashboard"
+            },
+            {
+              "description": "Enhance onboarding wizard text for clarity and engagement"
+            },
+            {
+              "description": "Refactor font validation and cleanup unused code"
+            },
+            {
+              "description": "Implement global agent search bar"
+            },
+            {
+              "description": "Fix stuck backtesting results in forms"
+            },
+            {
+              "description": "Add minimap for other agent locations"
+            },
+            {
+              "description": "Analyze and recommend tokenomics improvements"
+            },
+            {
+              "description": "Optimize create agent form loading"
+            },
+            {
+              "description": "Improve onboarding wizard checkbox and scroll indicator"
+            },
+            {
+              "description": "Optimize bundle size and load time"
+            },
+            {
+              "description": "Feat/fix font issues"
+            },
+            {
+              "description": "Feature/for 310 issue with email sending in prod"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-03",
+          "label": "November 3, 2025",
+          "entries": [
+            {
+              "description": "Refactor UnfundedAgentCardWithData to use router refresh for balance …"
+            },
+            {
+              "description": "Fix delete tournament button functionality"
+            },
+            {
+              "description": "Fix font issues in trade images"
+            },
+            {
+              "description": "Implement delete agent action with confirmation"
+            },
+            {
+              "description": "Refactor agent test files to dynamically retrieve agent usernames"
+            },
+            {
+              "description": "Refactor agent retrieval functions and remove unused transaction file"
+            },
+            {
+              "description": "Fix production key export bug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-11-02",
+      "label": "Week Ending 2025-11-02",
+      "days": [
+        {
+          "date": "2025-11-02",
+          "label": "November 2, 2025",
+          "entries": [
+            {
+              "description": "Enhance tournament leaderboard and payout components"
+            },
+            {
+              "description": "Refactor ActivityListItem components to improve structure and readabi…"
+            },
+            {
+              "description": "chore: fix decryption bug"
+            },
+            {
+              "description": "Refactor activity list item components"
+            },
+            {
+              "description": "Enhance EventBridge Scheduler configuration and error handling"
+            },
+            {
+              "description": "Feat/improve ssm env loading"
+            },
+            {
+              "description": "Fix mobile tab responsiveness"
+            },
+            {
+              "description": "Review code for test coverage gaps"
+            },
+            {
+              "description": "Standardize pnl calculations and reporting"
+            },
+            {
+              "description": "Improve mobile responsiveness for app pages"
+            },
+            {
+              "description": "Create tournament payout form"
+            },
+            {
+              "description": "Fix leaderboard rank and pnl sorting"
+            },
+            {
+              "description": "Fix image association in database"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-01",
+          "label": "November 1, 2025",
+          "entries": [
+            {
+              "description": "Add admin menu for generating trade images"
+            },
+            {
+              "description": "Update wallet popup styling to match shadcn"
+            },
+            {
+              "description": "Increase error toast duration to 30 seconds"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-31",
+          "label": "October 31, 2025",
+          "entries": [
+            {
+              "description": "Fix unfunded agent balance refresh button"
+            },
+            {
+              "description": "Review and improve page metadata"
+            },
+            {
+              "description": "Create admin users table with pagination"
+            },
+            {
+              "description": "Enable advanced mode for custom models"
+            },
+            {
+              "description": "Fix agent table pagination and row selection"
+            },
+            {
+              "description": "Implement shadcn time controls and fix image population bug"
+            },
+            {
+              "description": "Fix test email template path"
+            },
+            {
+              "description": "Enhance agent security and UI components"
+            },
+            {
+              "description": "Add collapsible attributes to agent creation form"
+            },
+            {
+              "description": "feat: enhance admin pages with Card component for improved layout"
+            },
+            {
+              "description": "Remove agent settings tab and page"
+            },
+            {
+              "description": "feat: enhance chunk management and player movement in game scenes"
+            },
+            {
+              "description": "Feat/tournament admin controls entry fees"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-30",
+          "label": "October 30, 2025",
+          "entries": [
+            {
+              "description": "feat: refactor tournament details and trading components"
+            },
+            {
+              "description": "feat: implement caching and retry logic for tournament leaderboard an…"
+            },
+            {
+              "description": "Feat/add sol replenishment logic"
+            },
+            {
+              "description": "feat: enhance tournament leaderboard calculations and agent registration"
+            },
+            {
+              "description": "feat: enhance fee tracking and serialization in trading actions"
+            },
+            {
+              "description": "Feat/tournament leaderboard pnl calcs"
+            },
+            {
+              "description": "Feat/add tournament features"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-29",
+          "label": "October 29, 2025",
+          "entries": [
+            {
+              "description": "feat: enhance PricingTiers component with background styling"
+            },
+            {
+              "description": "feat: add \"Plan\" navigation item and adjust layout styles in Account …"
+            },
+            {
+              "description": "fix: correct local production environment detection logic in Environm…"
+            },
+            {
+              "description": "Feat/improve agent actions permissions"
+            },
+            {
+              "description": "feat: enhance invite code handling in sign-in process"
+            },
+            {
+              "description": "feat: enhance agent details page with loading skeletons"
+            },
+            {
+              "description": "feat: add myAgents filter to agent retrieval and UI components"
+            },
+            {
+              "description": "feat: enhance waitlist functionality with invite code management  - I…"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-28",
+          "label": "October 28, 2025",
+          "entries": [
+            {
+              "description": "Feat/add ses emails"
+            },
+            {
+              "description": "feat: enhance model selection UI with hover and selection styles"
+            },
+            {
+              "description": "Feat/reset prisma migration history"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-10-26",
+      "label": "Week Ending 2025-10-26",
+      "days": [
+        {
+          "date": "2025-10-26",
+          "label": "October 26, 2025",
+          "entries": [
+            {
+              "description": "feat: update package versions and refactor token handling in components"
+            },
+            {
+              "description": "feat: update agent class badge styles and default variant"
+            },
+            {
+              "description": "Feat/agent model filter"
+            },
+            {
+              "description": "Feature/for 247 split out ai info into its own tab and another new tab for"
+            },
+            {
+              "description": "feat: enhance trading volume statistics and chart components"
+            },
+            {
+              "description": "fix: update model slug access in leaderboard columns"
+            },
+            {
+              "description": "Feature/for 242 make model icon more prominent"
+            },
+            {
+              "description": "Feat/improve trade error handling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-10-19",
+      "label": "Week Ending 2025-10-19",
+      "days": [
+        {
+          "date": "2025-10-17",
+          "label": "October 17, 2025",
+          "entries": [
+            {
+              "description": "refactor: update PositionsColumns to use TokenAmountBadge and improve…"
+            },
+            {
+              "description": "feat: add new technical indicator strategies"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-14",
+          "label": "October 14, 2025",
+          "entries": [
+            {
+              "description": "Fix/issues with signing errors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-10-12",
+      "label": "Week Ending 2025-10-12",
+      "days": [
+        {
+          "date": "2025-10-10",
+          "label": "October 10, 2025",
+          "entries": [
+            {
+              "description": "refactor: enhance security in transaction signing process"
+            },
+            {
+              "description": "Fix/leaderboard issues convert to agent query"
+            },
+            {
+              "description": "refactor: optimize session cache update in useSignInWithWeb3 hook"
+            },
+            {
+              "description": "Fix/improve dev email sign in security"
+            },
+            {
+              "description": "Fix/improve trade error handling"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-08",
+          "label": "October 8, 2025",
+          "entries": [
+            {
+              "description": "feat: implement quote failure notifications and enhance error handlin…"
+            },
+            {
+              "description": "Feat/add realtime activity subscription"
+            },
+            {
+              "description": "refactor: clean up test mocks in StrategyCard test file"
+            },
+            {
+              "description": "Feat/add xp view"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-07",
+          "label": "October 7, 2025",
+          "entries": [
+            {
+              "description": "feat: enhance build metadata and UI versioning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-10-05",
+      "label": "Week Ending 2025-10-05",
+      "days": [
+        {
+          "date": "2025-10-05",
+          "label": "October 5, 2025",
+          "entries": [
+            {
+              "description": "fix: refactor AgentAvatar and related components for improved sprite …"
+            },
+            {
+              "description": "Chore/improve ssr of cards"
+            },
+            {
+              "description": "Fix/adjust database amounts to bigint"
+            },
+            {
+              "description": "fix: improve agent retrieval and error handling"
+            },
+            {
+              "description": "feat: implement public permissions and action link strat"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-04",
+          "label": "October 4, 2025",
+          "entries": [
+            {
+              "description": "Feat/implement sprite animations"
+            },
+            {
+              "description": "chore: remove apps"
+            },
+            {
+              "description": "feat: add agent username routing part 2"
+            },
+            {
+              "description": "fix: update username field in Agent schema to be non-nullable and unique"
+            },
+            {
+              "description": "feat: add modelId to agent actions for improved tracking"
+            },
+            {
+              "description": "Feat/nightly open router model updates"
+            },
+            {
+              "description": "feat: improve agent trade evaluation"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-03",
+          "label": "October 3, 2025",
+          "entries": [
+            {
+              "description": "refactor: consolidate swap execution logic into ManualTradeDialogContent"
+            },
+            {
+              "description": "refactor: clean up Token model and related schemas"
+            },
+            {
+              "description": "feat: improve token management usePortfolio logic"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-02",
+          "label": "October 2, 2025",
+          "entries": [
+            {
+              "description": "chore: fix test"
+            },
+            {
+              "description": "test: add sampleArray mock for utils in updateCycleAction tests"
+            },
+            {
+              "description": "feat: update agent price systems to ccxt and get rid of birdeye"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-30",
+          "label": "September 30, 2025",
+          "entries": [
+            {
+              "description": "feat: add ccxt price sources"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-29",
+          "label": "September 29, 2025",
+          "entries": [
+            {
+              "description": "feat: improve agent scheduling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-09-28",
+      "label": "Week Ending 2025-09-28",
+      "days": [
+        {
+          "date": "2025-09-28",
+          "label": "September 28, 2025",
+          "entries": [
+            {
+              "description": "refactor: rename actionInterval to idleActionInterval for clarity"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-27",
+          "label": "September 27, 2025",
+          "entries": [
+            {
+              "description": "chore: add new field"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-24",
+          "label": "September 24, 2025",
+          "entries": [
+            {
+              "description": "Feat/add redis cache"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-23",
+          "label": "September 23, 2025",
+          "entries": [
+            {
+              "description": "Chore/fix things"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-22",
+          "label": "September 22, 2025",
+          "entries": [
+            {
+              "description": "Feat/ci still working"
+            },
+            {
+              "description": "Feat/improve config validation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-09-21",
+      "label": "Week Ending 2025-09-21",
+      "days": [
+        {
+          "date": "2025-09-15",
+          "label": "September 15, 2025",
+          "entries": [
+            {
+              "description": "Feat/ci still working"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-09-14",
+      "label": "Week Ending 2025-09-14",
+      "days": [
+        {
+          "date": "2025-09-12",
+          "label": "September 12, 2025",
+          "entries": [
+            {
+              "description": "Feature/for 220 fix ci deployment issues"
+            },
+            {
+              "description": "chore: improve environment variable loading and logging in app stack"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-11",
+          "label": "September 11, 2025",
+          "entries": [
+            {
+              "description": "Feature/for 220 fix ci deployment issues"
+            },
+            {
+              "description": "Feature/for 220 fix ci deployment issues"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-10",
+          "label": "September 10, 2025",
+          "entries": [
+            {
+              "description": "chore: enhance environment variable handling and logging in deploymen…"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-09",
+          "label": "September 9, 2025",
+          "entries": [
+            {
+              "description": "Setup simple pipeline"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-08-24",
+      "label": "Week Ending 2025-08-24",
+      "days": [
+        {
+          "date": "2025-08-18",
+          "label": "August 18, 2025",
+          "entries": [
+            {
+              "description": "fix: restore old ci"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-08-17",
+      "label": "Week Ending 2025-08-17",
+      "days": [
+        {
+          "date": "2025-08-11",
+          "label": "August 11, 2025",
+          "entries": [
+            {
+              "description": "Fix tooltip layout and style"
+            },
+            {
+              "description": "refactor: enhance trade logging and keypair creation in executeTrade.ts"
+            },
+            {
+              "description": "Implement agent avatar with status indicator"
+            },
+            {
+              "description": "feat: add summary sanitization for agent actions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-08-10",
+      "label": "Week Ending 2025-08-10",
+      "days": [
+        {
+          "date": "2025-08-10",
+          "label": "August 10, 2025",
+          "entries": [
+            {
+              "description": "FOR-144 - Display token balances in the withdraw dialog"
+            },
+            {
+              "description": "Create agent action countdown timer"
+            },
+            {
+              "description": "feat: enhance agent cycle execution with admin override"
+            },
+            {
+              "description": "Update release-please action to googleapis source"
+            },
+            {
+              "description": "Implement changelog and versioning system"
+            },
+            {
+              "description": "Fix codebase health report issues"
+            },
+            {
+              "description": "feat: [FOR-189] improve e2e test coverage on all major features"
+            }
+          ]
+        },
+        {
+          "date": "2025-08-09",
+          "label": "August 9, 2025",
+          "entries": [
+            {
+              "description": "Document and test system architecture"
+            }
+          ]
+        },
+        {
+          "date": "2025-08-08",
+          "label": "August 8, 2025",
+          "entries": [
+            {
+              "description": "feat: add trading tests - Refactor Agent Update Cycle with DI, Strategy Validation, Idempotency, and Comprehensive Tests"
+            },
+            {
+              "description": "Test and refine trade execution logic"
+            },
+            {
+              "description": "Debug scheduler for agent updates"
+            },
+            {
+              "description": "fix: update agent actions to use DEFAULT_MODEL constant"
+            },
+            {
+              "description": "fix: add polyfills for JSDOM gaps in vitest setup"
+            },
+            {
+              "description": "fix: update PRD structure and constants for improved organization"
+            },
+            {
+              "description": "feat: major improvements to e2e testing framework"
+            },
+            {
+              "description": "feat: improve e2e auth flow"
+            }
+          ]
+        },
+        {
+          "date": "2025-08-07",
+          "label": "August 7, 2025",
+          "entries": [
+            {
+              "description": "Review codebase for major issues"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-08-03",
+      "label": "Week Ending 2025-08-03",
+      "days": [
+        {
+          "date": "2025-07-28",
+          "label": "July 28, 2025",
+          "entries": [
+            {
+              "description": "feat: improve query performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-07-27",
+      "label": "Week Ending 2025-07-27",
+      "days": [
+        {
+          "date": "2025-07-27",
+          "label": "July 27, 2025",
+          "entries": [
+            {
+              "description": "Fix/improve scheduling trading bugs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-07-13",
+      "label": "Week Ending 2025-07-13",
+      "days": [
+        {
+          "date": "2025-07-10",
+          "label": "July 10, 2025",
+          "entries": [
+            {
+              "description": "feat: basic tournament creation features"
+            },
+            {
+              "description": "feat: add tournaments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-06-15",
+      "label": "Week Ending 2025-06-15",
+      "days": [
+        {
+          "date": "2025-06-12",
+          "label": "June 12, 2025",
+          "entries": [
+            {
+              "description": "feat: chat with agent"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-11",
+          "label": "June 11, 2025",
+          "entries": [
+            {
+              "description": "feat: fix trading indicators on KDJ strat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-06-08",
+      "label": "Week Ending 2025-06-08",
+      "days": [
+        {
+          "date": "2025-06-03",
+          "label": "June 3, 2025",
+          "entries": [
+            {
+              "description": "feat: improve scheduler error handling and fallback behavior"
+            },
+            {
+              "description": "fix: issues with private keys not working"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-06-01",
+      "label": "Week Ending 2025-06-01",
+      "days": [
+        {
+          "date": "2025-05-28",
+          "label": "May 28, 2025",
+          "entries": [
+            {
+              "description": "fix: bug with build issues"
+            },
+            {
+              "description": "feat: implement serverless architecture"
+            },
+            {
+              "description": "feat: convert backend to simple scheduler and update all agents to serverless architecture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-05-25",
+      "label": "Week Ending 2025-05-25",
+      "days": [
+        {
+          "date": "2025-05-25",
+          "label": "May 25, 2025",
+          "entries": [
+            {
+              "description": "fix: misc cleanup and environment fixes"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-24",
+          "label": "May 24, 2025",
+          "entries": [
+            {
+              "description": "feat: improve menu sidebar and responsiveness"
+            },
+            {
+              "description": "feat: responsive improvements plane work"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-20",
+          "label": "May 20, 2025",
+          "entries": [
+            {
+              "description": "chore: add health route to server, enhance agent action logging with …"
+            },
+            {
+              "description": "chore: update character API URL references to use new config variable…"
+            },
+            {
+              "description": "chore: fix backend url references"
+            },
+            {
+              "description": "fix: logging issues"
+            },
+            {
+              "description": "Dev"
+            },
+            {
+              "description": "chore: fix missing package"
+            },
+            {
+              "description": "chore: implement better logging"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-19",
+          "label": "May 19, 2025",
+          "entries": [
+            {
+              "description": "refactor: kill shared package"
+            },
+            {
+              "description": "feat: refactor agent portfolio components and update hidden columns f…"
+            },
+            {
+              "description": "Dev"
+            },
+            {
+              "description": "chore: remove unused generateSecurePassword function and update Solan…"
+            },
+            {
+              "description": "chore: merge in prod workflow stuff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-05-18",
+      "label": "Week Ending 2025-05-18",
+      "days": [
+        {
+          "date": "2025-05-18",
+          "label": "May 18, 2025",
+          "entries": [
+            {
+              "description": "refactor: update CreateTournamentForm to use any type for schema reso…"
+            },
+            {
+              "description": "feat: improve security and environment handling"
+            },
+            {
+              "description": "Feat/implement tournament features"
+            },
+            {
+              "description": "Feat/implement tournament features"
+            },
+            {
+              "description": "refactor: remove legacy encryption methods and update imports to use …"
+            },
+            {
+              "description": "feat: improve key security"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-17",
+          "label": "May 17, 2025",
+          "entries": [
+            {
+              "description": "feat: simplify agent creation process and add unfunded step"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-16",
+          "label": "May 16, 2025",
+          "entries": [
+            {
+              "description": "feat: improve security of auth process"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-15",
+          "label": "May 15, 2025",
+          "entries": [
+            {
+              "description": "feat: add sentry"
+            },
+            {
+              "description": "feat: improve login security"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-13",
+          "label": "May 13, 2025",
+          "entries": [
+            {
+              "description": "wip"
+            },
+            {
+              "description": "feat: agents, new backend, backtesting, strategies, all the fun stuff"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-12",
+          "label": "May 12, 2025",
+          "entries": [
+            {
+              "description": "feat: backtesting, new strategies, and terms of use"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-05-11",
+      "label": "Week Ending 2025-05-11",
+      "days": [
+        {
+          "date": "2025-05-09",
+          "label": "May 9, 2025",
+          "entries": [
+            {
+              "description": "feat: implement backtesting tools during agent creation"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-07",
+          "label": "May 7, 2025",
+          "entries": [
+            {
+              "description": "feat: improve leaderboard reporting"
+            },
+            {
+              "description": "feat: add trading and action intervals to Agent schema and update rel…"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-06",
+          "label": "May 6, 2025",
+          "entries": [
+            {
+              "description": "feat: 83 add ability to select a model at the agent level"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-05",
+          "label": "May 5, 2025",
+          "entries": [
+            {
+              "description": "refactor: comment out unit and integration test steps in CI workflow"
+            },
+            {
+              "description": "refactor: update error and loading states to use new State component …"
+            },
+            {
+              "description": "refactor: add Railway Service ID to server management and update agen…"
+            },
+            {
+              "description": "Feat/server mapping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-05-04",
+      "label": "Week Ending 2025-05-04",
+      "days": [
+        {
+          "date": "2025-05-04",
+          "label": "May 4, 2025",
+          "entries": [
+            {
+              "description": "feat: agent creation wizard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-04-27",
+      "label": "Week Ending 2025-04-27",
+      "days": [
+        {
+          "date": "2025-04-27",
+          "label": "April 27, 2025",
+          "entries": [
+            {
+              "description": "feat: updates to run each agent in own worker_thread - many improvements to frontend query and display logic"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-23",
+          "label": "April 23, 2025",
+          "entries": [
+            {
+              "description": "refactor: reorganize agents character schema"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-22",
+          "label": "April 22, 2025",
+          "entries": [
+            {
+              "description": "fix: build issues 2025 04 22"
+            },
+            {
+              "description": "feat: add manual trade feature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-04-13",
+      "label": "Week Ending 2025-04-13",
+      "days": [
+        {
+          "date": "2025-04-10",
+          "label": "April 10, 2025",
+          "entries": [
+            {
+              "description": "Feat/new frontend"
+            },
+            {
+              "description": "Chore/upgrade tw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-04-06",
+      "label": "Week Ending 2025-04-06",
+      "days": [
+        {
+          "date": "2025-04-03",
+          "label": "April 3, 2025",
+          "entries": [
+            {
+              "description": "Refactor/create database project"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-02",
+          "label": "April 2, 2025",
+          "entries": [
+            {
+              "description": "Refactor/create database project"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-03-30",
+      "label": "Week Ending 2025-03-30",
+      "days": [
+        {
+          "date": "2025-03-27",
+          "label": "March 27, 2025",
+          "entries": [
+            {
+              "description": "Chore/fix prisma sync issues"
+            }
+          ]
+        },
+        {
+          "date": "2025-03-25",
+          "label": "March 25, 2025",
+          "entries": [
+            {
+              "description": "Feat/rebuild db"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-03-23",
+      "label": "Week Ending 2025-03-23",
+      "days": [
+        {
+          "date": "2025-03-23",
+          "label": "March 23, 2025",
+          "entries": [
+            {
+              "description": "chore: remove unused migration files for initial and update schemas, …"
+            }
+          ]
+        },
+        {
+          "date": "2025-03-18",
+          "label": "March 18, 2025",
+          "entries": [
+            {
+              "description": "chore: update package.json with type overrides for React and adjust g…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekEnding": "2025-03-16",
+      "label": "Week Ending 2025-03-16",
+      "days": [
+        {
+          "date": "2025-03-15",
+          "label": "March 15, 2025",
+          "entries": [
+            {
+              "description": "Feat/simplified agent loop"
+            }
+          ]
+        },
+        {
+          "date": "2025-03-14",
+          "label": "March 14, 2025",
+          "entries": [
+            {
+              "description": "Feat/add agent monitoring"
             }
           ]
         }
