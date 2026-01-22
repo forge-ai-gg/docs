@@ -3,28 +3,568 @@ title: "Changelog"
 description: "Track the latest updates, features, and improvements to ForgeAI. Our changelog is automatically updated with each production deployment."
 ---
 
-import changelog from './changelog.json';
-
 # Changelog
 
 Stay up to date with the latest changes to ForgeAI. This changelog is automatically generated from our production deployments.
 
 <Info>
-  **Last updated:** {new Date(changelog.generatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+  **Last updated:** January 22, 2026
 </Info>
 
-{changelog.weeks.map((week) => (
-  <div key={week.weekEnding}>
-    <h2>{week.label}</h2>
-    {week.days.map((day) => (
-      <div key={day.date}>
-        <h3>{day.label}</h3>
-        <ul>
-          {day.entries.map((entry, index) => (
-            <li key={`${day.date}-${index}`}>{entry.description}</li>
-          ))}
-        </ul>
-      </div>
-    ))}
-  </div>
-))}
+<AccordionGroup>
+
+<Accordion title="Week Ending 2026-01-25">
+
+### January 22, 2026
+
+- feat: improve scroll behavior and mobile responsiveness
+- chore: update .gitignore and pnpm-lock.yaml, enhance error logging in…
+- Fix/build issues 3
+- refactor: improve type safety and import organization in achievement …
+- feat: enhance performance tracking and type safety in game components
+- Fix/unit tests 2
+- feat: enhance agent deletion process and improve database indexing
+- Fix/unit tests
+- chore: update vitest configuration for improved memory management
+- test: enhance processTournamentPayout validation tests
+- chore: update GitHub Actions workflow to use enhanced runner and setu…
+- feat: implement funding pending banner and enhance agent creation flow
+- Feat/improve agent creation flow
+
+### January 21, 2026
+
+- Back Navigation Links Implementation
+- Glass Styling Consolidation - Unified Glass Morphism Design System
+- chore: optimize vitest configuration and enhance test cleanup
+
+### January 20, 2026
+
+- fix: resolve linter and typescript errors across chat api and tests
+- Enhance performance tracking and agent schema with achievement models…
+- Fix Global Leaderboard Feature
+- Review Performance Tracking Systems
+- Tournament Payout Flow Enhancement
+- Agent Chat SDK 6 Improvements - Modern Patterns & Tool Calling
+- Tournament Chart Replay Controls
+- Agent Execution Cycle Bug Fixes
+- Agent Achievement System
+- 065-add-actionsmenu-to-activitylistitem
+- Feat/improve action detail
+- Feat/improve tournament charting features
+
+### January 19, 2026
+
+- Review Performance Tracking Systems
+- Review Vercel AI SDK 6 Agent Loop Implementation for Trading Issues
+- Increase Pagination Button Touch Targets
+- Remove Distracting Input Focus Animation
+- Add tRPC Query Result Caching Middleware
+- QueryStateWrapper Component for Data Fetching
+- Enhance Dialog Close Button Visibility
+
+</Accordion>
+
+<Accordion title="Week Ending 2026-01-18">
+
+### January 18, 2026
+
+- Add metadata field to tournament response in GET endpoint
+- Enhance API key authentication middleware and OpenAPI specifications
+- Update changelog script to use .cjs extension in GitHub Actions workflow
+- Refactor debug logging in API key verification middleware
+- Add temporary debug logging for API key verification in middleware
+
+### January 17, 2026
+
+- Add API key authentication middleware and update OpenAPI specifications
+- Remove .auto-claude-security.json file, update changelog script to us…
+- Refactor imports for consistency and remove unused imports in various…
+- Downgrade Next.js and related packages to version 15.4.6 in package.j…
+- Update dependencies in pnpm-lock.yaml, add '@ai-sdk/react' version 3.…
+- Chore/fix 403 auth issues
+
+### January 16, 2026
+
+- Add test coverage for critical balanceTracking services
+- Split monolithic balanceHistory.ts into domain-specific modules
+- Optimize chart component re-renders with proper memoization
+- Create architecture documentation for trading system and agent cycle
+- Implement consistent React Query staleTime for token/price data
+- Replace generic Next.js README with ForgeAI-specific documentation
+- Add list virtualization for agent tables and position lists
+- Add Contextual Empty State Actions
+- Add Skip Navigation Link
+- Unified Agent Chat MVP with Vercel AI SDK
+- Implement changelog synchronization in GitHub Actions workflow and en…
+- Refactor Agent Details Page and Add Tournament API Schemas
+- Action Detail Page Redesign
+- Enhance image generation functionality with meme support
+
+### January 15, 2026
+
+- Fix/build issues
+- Feat/improve subheader layouts
+
+### January 13, 2026
+
+- Update .gitignore, ESLint config, and package dependencies; remove ob…
+- Implement Vercel AI SDK 6 Tool Loop Pattern
+- Global Leaderboard with Multiple Timeframes
+- Driver.js Onboarding Tour
+- Drift Protocol Mage Agent Integration
+- chore: update dependencies for Twilio and web-push, add type definiti…
+- Create and Fund Agent in Single Step
+- Notification Infrastructure for Position Events
+- Performance Stats Accuracy Audit
+- Tournament Payout Flow Testing & Validation
+- Reduce daily tournament scheduling from 28 days to 7 days
+- Fix Balance Chart PnL Data Consistency
+- Review Backfill Wallet Balance Feature
+- refactor: optimize balance retrieval and improve tournament card comp…
+
+### January 12, 2026
+
+- 021 improve tournament cards
+- feat: implement batch agent statistics retrieval
+
+</Accordion>
+
+<Accordion title="Week Ending 2026-01-11">
+
+### January 11, 2026
+
+- fix: enhance logger server runtime detection
+- 019 improve game state for tournaments
+- 022 establish public rest api pattern
+- - Implemented POST /api/v1/agents/[agentId]/start to activate an agent's trading schedule, including permission validation, SOL to USDC conversion, and EventBridge scheduling.
+- feat: enhance AppearanceOptions component with category grouping and …
+- 011 tournament performance recording fix
+- - Added a new API route to capture balance snapshots for participants in tournaments that started within the last hour, ensuring accurate baseline balances for leaderboard calculations.
+- 015 i want you to look at the tournament card that
+- 016 modify the nightly job schedule that is responsib
+- feat: enhance tooltip and hover card components for touch device support
+- feat: update integration testing and error handling for balance charts
+- Feat/add more integrations
+
+### January 10, 2026
+
+- fix: improve documentation and security logging
+- fix: logger and generate agent
+- Fix/improve slow db queries
+
+### January 7, 2026
+
+- refactor: update agent retrieval logic and improve performance
+
+### January 6, 2026
+
+- feat: add overall responsive adjustments for agents, layout, organization and shared components
+
+### January 5, 2026
+
+- Enhance API response for generated images to include associated agent…
+- Enhance Agent PnL Changes and Update E2E Tests
+- Refactor Auth Layout and Update E2E Tests
+- Chore/fix e2e tests12
+
+</Accordion>
+
+<Accordion title="Week Ending 2026-01-04">
+
+### January 4, 2026
+
+- Chore/fix e2e tests 10
+
+### January 2, 2026
+
+- Feat/implement tournament payouts
+
+### December 30, 2025
+
+- Merge remote-tracking branch 'origin/main' into feat/responsive
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-12-21">
+
+### December 20, 2025
+
+- fix: Update error messages for improved user experience
+- Fix/balance calcs
+
+### December 18, 2025
+
+- fix: Update social share image references from PNG to JPG
+- Feat/agent health indicator improvements
+- Feat/improve twitter fields
+- Feat/add x com integration settings
+- refactor: Enhance tournament leaderboard calculations and agent healt…
+
+### December 17, 2025
+
+- refactor: Optimize agent caching and leaderboard retrieval
+- Chore/fix e2e tests 8
+- refactor: Remove tournament activity filtering end-to-end test
+- feat: Enhance testing and performance tracking features
+
+### December 16, 2025
+
+- Chore/fix e2e tests 7
+- Feat/improve tournament payout features
+- test: Improve comment clarity in agent strategy tab end-to-end test
+- refactor: Enhance tournament agent actions retrieval and improve pric…
+- test: Update account menu references in end-to-end tests
+- chore: Clean up code and improve type safety in various components
+- chore: Update changelog and enhance maintenance job tracking
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-12-14">
+
+### December 14, 2025
+
+- test: Update tournament creation form visibility logic for admin users
+- Feat/improved agent balance snapshots
+- Feat/improve tournament flows add auto router
+
+### December 11, 2025
+
+- Feat/switch to helius
+
+### December 10, 2025
+
+- Chore/performance improvements
+
+### December 9, 2025
+
+- Feat/improve paper trading price indexing tournaments
+
+### December 8, 2025
+
+- refactor: Update agent action types and improve metadata handling
+- feat: Enhance agent actions and image generation capabilities
+- feat: Implement paper trading functionality for agents
+- Feature/for 431 bring back leaderboard page
+- Feature/for 368 implement credits system
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-12-07">
+
+### December 6, 2025
+
+- Feat/credits referrals rbac fees history
+
+### December 5, 2025
+
+- chore: Update pnpm-lock.yaml with dependency changes
+- Feat/improve quick create agent option
+- feat: Enhance agent settings and tournament management features
+- Feat/add privy auth
+
+### December 4, 2025
+
+- refactor: Standardize formatting and improve readability in ActivityL…
+- refactor: Simplify ActivityListItem component and remove unused actio…
+- chore: Enhance dev script to build database package before fetching S…
+
+### December 3, 2025
+
+- test: Enhance e2e tests for agent exploration journey
+- refactor: Update agent creation and balance tracking components
+- chore: adjust responsive for agents?myAgents page
+- Merge remote-tracking branch 'origin/main' into chore/FOR-407-fixes
+- Feat/improve tournament registration
+
+### December 2, 2025
+
+- Chore/fix e2e tests 2
+- feat: Enhance strategy configuration and dashboard components
+- Feat/implement health monitoring tools
+
+### December 1, 2025
+
+- feat: Enhance strategy configuration with improved component structur…
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-11-30">
+
+### November 30, 2025
+
+- chore: Clean up code by removing unnecessary whitespace and comments
+- feat: Update agent exploration journey tests for owner-only tab visib…
+- Feat/enable multistrategy selection
+
+### November 29, 2025
+
+- feat: implement agent strategy assignment details
+
+### November 28, 2025
+
+- refactor: Remove leaderboard navigation test from e2e tests
+- feat: Introduce new IndicatorSparkline and IndicatorValuesMatrix comp…
+- feat: Update token deletion process and confirmation dialog
+- Chore/combine leaderboard and agents list
+
+### November 27, 2025
+
+- feat: implement agent pnl indicators
+- fix: refactor NavigationProgress component for improved state management
+- Implement navigation feedback system
+- feat: Enhance token management with CRUD operations and DexScreener i…
+
+### November 26, 2025
+
+- Feat/implement banner image cropping
+- Improve unit test coverage for critical modules
+- Feat/implement banner image cropping
+- Feat/improve token price indexing
+
+### November 25, 2025
+
+- Chore/improve error handling
+- chore: improve error handling
+- chore: update dependencies and enhance Sentry integration
+
+### November 24, 2025
+
+- chore: fix perms
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-11-23">
+
+### November 23, 2025
+
+- Revert "Merge pull request #433 from forge-ai-gg/chore/fix-eventbridg…
+- refactor: Update EventBridge Scheduler management permissions and Lam…
+- chore: Remove debug build step from test pipeline and update deployme…
+- chore: Enhance test pipeline with debug build for Price Indexer
+- chore: Update dependencies and refactor Price Indexer fetchers
+- Chore/fix email sending functions
+- chore: Update .dockerignore and Dockerfile for image generation impro…
+
+### November 22, 2025
+
+- test: Improve e2e navigation and tournament detail tests
+- refactor: Update TournamentsSection to default to table view and impr…
+- Fix tournament edit form issues
+- chore: Clean up .dockerignore and update Dockerfile for image generation
+- feat: Enhance agent details layout with responsive tabs and sidebar
+- Chore/fix build pipeline image gen
+- Feat/agent tabs to sidebar
+- chore: fix tests
+- refactor: Enhance Price Indexer and Token Detail components
+- refactor: Remove partitioning logic for price data
+
+### November 21, 2025
+
+- chore: Update pnpm-lock.yaml for dependency version adjustments
+
+### November 20, 2025
+
+- chore: Update pnpm-lock.yaml for dependency version adjustments
+- Feat/add token detail charts
+- Feat/add agent class selection
+- refactor: Simplify Dockerfiles for image-generation and price-indexer
+- refactor: Implement multi-stage builds for image-generation and price…
+
+### November 19, 2025
+
+- refactor: Update Dockerfile paths and improve dependency management f…
+- feat: Enhance image generation capabilities and update README
+- fix: Update imports and simplify price decimal calculation in TokenDe…
+- Implement token detail page and route
+- feat: Enhance position filtering and improve transaction handling
+- Smooth agent movement in game scene
+
+### November 18, 2025
+
+- Feature/for 380 setup new 1m price indexer
+- Feat/add force indexing column
+- Feat/add price indexer db tables
+- chore: update pnpm-lock.yaml and remove obsolete image-generation pac…
+- Add email resend action to admin table
+- refactor: migrate image generation functionality to a standalone package
+- refactor: restructure app stack for improved modularity and maintaina…
+- feat: invalidate agent cache after starting an agent
+- Fix broken email sending function
+- Fix activity feed scrolling bug
+
+### November 17, 2025
+
+- Refactor agent generation to use LLM
+- Feat/improve image gen and version indicator
+- Sanitize markdown output for action text
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-11-16">
+
+### November 16, 2025
+
+- fix: format profit amount in closeAllPositionsAction
+- refactor: remove image upload functionality and related tests
+- chore: update CI/CD workflows to use ARM architecture for consistency…
+- fix: remove DOCKER_BUILDKIT=0 to enable BuildKit for multi-platform b…
+- feat: add force inactive tokens list and update token handling logic
+- Feat/improve pipelines
+
+### November 15, 2025
+
+- chore: remove "type" field from package.json to streamline configuration
+- Feat/improve pipelines
+- chore: fix pipelines
+- chore: comment out test, build, and e2e jobs in GitHub Actions workfl…
+- feat: add production deployment workflow and setup documentation for …
+
+### November 13, 2025
+
+- chore: fix the tests
+- .github/workflows: Migrate workflows to Blacksmith runners
+- chore: update test pipeline to use ubuntu-latest runner
+- chore: update pipeline config
+- refactor: Replace UnderConstructionPage with ComingSoonPage
+- Feat/add under construction
+- fix: Ensure ActionMarkdown component handles undefined children grace…
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-11-09">
+
+### November 7, 2025
+
+- feat: Enhance environment configuration and balance tracking
+- Implement markdown for agent action content
+- Fix default activities query not returning data
+- Refactor agent form character attributes panel
+- Fix stuck toast notification when stopping agent
+- Create admin activity table
+- Design agent balance tracking architecture
+- Display trading chart times in user timezone
+- Investigate KDJ strategy backtesting accuracy
+- Fix font loading on image overlay
+
+### November 6, 2025
+
+- Feat/fix image font loading
+- Feat/add saving of appearance form
+- Create api endpoints for positions and agents
+- Revert "Merge pull request #320 from forge-ai-gg/fix/font-issues-on-i…
+- Fix/font issues on image generator
+- Feat/move from env to ssm
+
+### November 5, 2025
+
+- Feat/character customizer utility
+- Fix/fix e2e tests
+- Feat/improve token loading
+- Refactor AdminRecentErrors and AgentActivityList components
+- Plan admin dashboard with reporting
+- Optimize database queries and structure
+- Security audit for production launch
+
+### November 4, 2025
+
+- Fix responsive ui for mobile
+- Review and secure system admin permissions
+- Develop ai model comparison dashboard
+- Enhance onboarding wizard text for clarity and engagement
+- Refactor font validation and cleanup unused code
+- Implement global agent search bar
+- Fix stuck backtesting results in forms
+- Add minimap for other agent locations
+- Analyze and recommend tokenomics improvements
+- Optimize create agent form loading
+- Improve onboarding wizard checkbox and scroll indicator
+- Optimize bundle size and load time
+- Feat/fix font issues
+- Feature/for 310 issue with email sending in prod
+
+### November 3, 2025
+
+- Refactor UnfundedAgentCardWithData to use router refresh for balance …
+- Fix delete tournament button functionality
+- Fix font issues in trade images
+- Implement delete agent action with confirmation
+- Refactor agent test files to dynamically retrieve agent usernames
+- Refactor agent retrieval functions and remove unused transaction file
+- Fix production key export bug
+
+</Accordion>
+
+<Accordion title="Week Ending 2025-11-02">
+
+### November 2, 2025
+
+- Enhance tournament leaderboard and payout components
+- Refactor ActivityListItem components to improve structure and readabi…
+- chore: fix decryption bug
+- Refactor activity list item components
+- Enhance EventBridge Scheduler configuration and error handling
+- Feat/improve ssm env loading
+- Fix mobile tab responsiveness
+- Review code for test coverage gaps
+- Standardize pnl calculations and reporting
+- Improve mobile responsiveness for app pages
+- Create tournament payout form
+- Fix leaderboard rank and pnl sorting
+- Fix image association in database
+
+### November 1, 2025
+
+- Add admin menu for generating trade images
+- Update wallet popup styling to match shadcn
+- Increase error toast duration to 30 seconds
+
+### October 31, 2025
+
+- Fix unfunded agent balance refresh button
+- Review and improve page metadata
+- Create admin users table with pagination
+- Enable advanced mode for custom models
+- Fix agent table pagination and row selection
+- Implement shadcn time controls and fix image population bug
+- Fix test email template path
+- Enhance agent security and UI components
+- Add collapsible attributes to agent creation form
+- feat: enhance admin pages with Card component for improved layout
+- Remove agent settings tab and page
+- feat: enhance chunk management and player movement in game scenes
+- Feat/tournament admin controls entry fees
+
+### October 30, 2025
+
+- feat: refactor tournament details and trading components
+- feat: implement caching and retry logic for tournament leaderboard an…
+- Feat/add sol replenishment logic
+- feat: enhance tournament leaderboard calculations and agent registration
+- feat: enhance fee tracking and serialization in trading actions
+- Feat/tournament leaderboard pnl calcs
+- Feat/add tournament features
+
+### October 29, 2025
+
+- feat: enhance PricingTiers component with background styling
+- feat: add "Plan" navigation item and adjust layout styles in Account …
+- fix: correct local production environment detection logic in Environm…
+- Feat/improve agent actions permissions
+- feat: enhance invite code handling in sign-in process
+- feat: enhance agent details page with loading skeletons
+- feat: add myAgents filter to agent retrieval and UI components
+- feat: enhance waitlist functionality with invite code management  - I…
+
+### October 28, 2025
+
+- Feat/add ses emails
+- feat: enhance model selection UI with hover and selection styles
+- Feat/reset prisma migration history
+
+</Accordion>
+
+</AccordionGroup>
+
+<Note>
+  This changelog shows the most recent 12 weeks. There are 26 additional weeks of history available in the repository.
+</Note>
