@@ -25,7 +25,8 @@
             "pages": [
               "index",
               "quickstart",
-              "wallet-setup"
+              "wallet-setup",
+              "glossary"
             ]
           },
           {
