@@ -2,3 +2,104 @@
 title: "Start Agent"
 openapi: "POST /agents/{agentId}/start"
 ---
+
+## Overview
+
+Activates an agent to begin autonomous trading. When started, the agent will:
+
+1. Initialize its trading wallet if not already funded
+2. Convert SOL to USDC for trading capital (if applicable)
+3. Schedule the agent's execution cycle via EventBridge
+4. Begin monitoring markets and executing trades based on its configured strategy
+
+<Warning>
+Starting an agent requires the agent to be properly funded. Ensure your agent has sufficient SOL for gas fees and trading capital before calling this endpoint.
+</Warning>
+
+## Prerequisites
+
+Before starting an agent:
+
+- **Agent ownership** — You must own the agent (authenticated via Privy JWT)
+- **Funded wallet** — The agent's wallet needs SOL for gas and trading capital
+- **Valid strategy** — The agent must have a configured trading strategy
+
+## Example Request
+
+<CodeGroup>
+
+```bash cURL
+curl -X POST "https://app.forgeai.gg/api/v1/agents/{agentId}/start" \
+  -H "Authorization: Bearer <your-privy-jwt>" \
+  -H "Content-Type: application/json"
+```
+
+```javascript JavaScript
+const response = await fetch(
+  `https://app.forgeai.gg/api/v1/agents/${agentId}/start`,
+  {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${privyToken}`,
+      'Content-Type': 'application/json'
+    }
+  }
+);
+
+const result = await response.json();
+```
+
+```python Python
+import requests
+
+response = requests.post(
+    f"https://app.forgeai.gg/api/v1/agents/{agent_id}/start",
+    headers={
+        "Authorization": f"Bearer {privy_token}",
+        "Content-Type": "application/json"
+    }
+)
+
+result = response.json()
+```
+
+</CodeGroup>
+
+## Response
+
+A successful response returns the updated agent object with its new status:
+
+```json
+{
+  "id": "agent_abc123",
+  "name": "AlphaBot",
+  "status": "active",
+  "class": "Fighter",
+  "startedAt": "2026-01-30T12:00:00Z"
+}
+```
+
+## Error Handling
+
+| Status Code | Description |
+|------------|-------------|
+| `400` | Agent is already running or invalid state |
+| `401` | Missing or invalid authentication token |
+| `403` | You don't own this agent |
+| `404` | Agent not found |
+| `422` | Agent wallet not funded or strategy not configured |
+
+<Tip>
+If you receive a `422` error, check that your agent's wallet has been funded. You can fund an agent through the ForgeAI dashboard or by sending SOL directly to the agent's wallet address.
+</Tip>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Stop Agent" icon="stop" href="/api-reference/endpoint/stop-agent">
+    Stop an agent from trading
+  </Card>
+  <Card title="Creating Agents" icon="robot" href="/guides/creating-agents">
+    Guide to creating and configuring agents
+  </Card>
+</CardGroup>

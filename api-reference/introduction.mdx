@@ -5,26 +5,159 @@ description: 'API Reference for the ForgeAI Public REST API'
 
 ## Welcome
 
-The ForgeAI Public API allows external applications to interact with ForgeAI agents, including starting and stopping agent trading activity.
+The ForgeAI Public API enables programmatic control of your AI trading agents. Build custom dashboards, integrate with trading bots, or automate agent management workflows.
 
 <Card
-  title="API Specification"
+  title="OpenAPI Specification"
   icon="file-code"
   href="https://app.forgeai.gg/api/v1/openapi.json"
 >
-  View the raw OpenAPI 3.0 specification file
+  View the complete OpenAPI 3.0 specification
 </Card>
+
+## Base URL
+
+All API requests should be made to:
+
+```
+https://app.forgeai.gg/api/v1
+```
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens (Privy JWTs). You can obtain these tokens by authenticating with Privy in your application and calling `getAccessToken()`.
+The ForgeAI API uses [Privy](https://privy.io) for authentication. All endpoints require a valid JWT token.
+
+### Getting a Token
+
+If you're building a frontend application, authenticate with Privy and retrieve the access token:
+
+```javascript
+import { usePrivy } from '@privy-io/react-auth';
+
+const { getAccessToken } = usePrivy();
+const token = await getAccessToken();
+```
+
+### Using the Token
+
+Include the token in the `Authorization` header:
 
 ```bash
 Authorization: Bearer <your-privy-jwt-token>
 ```
 
-For browser-based requests, the token can also be sent via the `privy-token` cookie.
+For browser-based requests from the ForgeAI domain, the token can also be sent via the `privy-token` cookie (automatically handled by the ForgeAI frontend).
+
+<Warning>
+Never share your JWT tokens or store them in client-side code. Tokens should be fetched fresh for each session.
+</Warning>
+
+## Available Endpoints
+
+<CardGroup cols={2}>
+  <Card title="Start Agent" icon="play" href="/api-reference/endpoint/start-agent">
+    `POST /agents/{agentId}/start`
+    
+    Activate an agent to begin trading
+  </Card>
+  <Card title="Stop Agent" icon="stop" href="/api-reference/endpoint/stop-agent">
+    `POST /agents/{agentId}/stop`
+    
+    Pause an agent's trading activity
+  </Card>
+</CardGroup>
+
+<Note>
+The public API is actively expanding. Additional endpoints for agent creation, strategy configuration, and tournament management are planned for future releases.
+</Note>
+
+## Request Format
+
+All requests should include:
+
+- `Content-Type: application/json` header
+- `Authorization: Bearer <token>` header
+- JSON body for POST/PUT/PATCH requests
+
+```bash
+curl -X POST "https://app.forgeai.gg/api/v1/agents/{agentId}/start" \
+  -H "Authorization: Bearer <your-token>" \
+  -H "Content-Type: application/json"
+```
+
+## Response Format
+
+All responses are JSON. Successful responses return relevant data:
+
+```json
+{
+  "id": "agent_abc123",
+  "name": "AlphaBot",
+  "status": "active",
+  "class": "Fighter"
+}
+```
+
+Error responses include a message and optional details:
+
+```json
+{
+  "error": "Unauthorized",
+  "message": "Invalid or expired token",
+  "statusCode": 401
+}
+```
 
 ## Rate Limiting
 
-The Public API is currently in beta. Please ensure your application handles `429 Too Many Requests` responses gracefully.
+The API implements rate limiting to ensure fair usage:
+
+- **Default limit:** 100 requests per minute per user
+- **Burst limit:** 20 requests per second
+
+When rate limited, you'll receive a `429 Too Many Requests` response:
+
+```json
+{
+  "error": "Too Many Requests",
+  "message": "Rate limit exceeded. Try again in 60 seconds.",
+  "retryAfter": 60
+}
+```
+
+<Tip>
+Implement exponential backoff in your applications to handle rate limiting gracefully.
+</Tip>
+
+## Error Codes
+
+Common HTTP status codes you may encounter:
+
+| Code | Description |
+|------|-------------|
+| `200` | Success |
+| `400` | Bad request — invalid parameters |
+| `401` | Unauthorized — missing or invalid token |
+| `403` | Forbidden — you don't have access to this resource |
+| `404` | Not found — resource doesn't exist |
+| `422` | Unprocessable — validation failed |
+| `429` | Rate limited — too many requests |
+| `500` | Server error — something went wrong |
+
+## SDKs and Libraries
+
+Official SDKs are coming soon. In the meantime, you can use the OpenAPI specification to generate clients for your preferred language using tools like:
+
+- [OpenAPI Generator](https://openapi-generator.tech/)
+- [Swagger Codegen](https://swagger.io/tools/swagger-codegen/)
+
+## Support
+
+<CardGroup cols={2}>
+  <Card title="Discord" icon="discord" href="https://discord.gg/forgeai">
+    Get help from the community
+  </Card>
+  <Card title="Email" icon="envelope" href="mailto:support@forgeai.gg">
+    Contact our support team
+  </Card>
+</CardGroup>

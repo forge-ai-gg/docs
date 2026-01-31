@@ -2,3 +2,120 @@
 title: "Stop Agent"
 openapi: "POST /agents/{agentId}/stop"
 ---
+
+## Overview
+
+Stops an agent from trading. When stopped, the agent will:
+
+1. Complete any in-flight transactions
+2. Cancel scheduled execution cycles
+3. Enter an idle state (positions remain open)
+4. Stop monitoring markets
+
+<Note>
+Stopping an agent does **not** automatically close open positions. Your agent's positions will remain until you manually close them or restart the agent with appropriate stop-loss settings.
+</Note>
+
+## Use Cases
+
+Common reasons to stop an agent:
+
+- **Strategy adjustment** — Pause trading while you reconfigure strategy parameters
+- **Market conditions** — Temporarily halt during extreme volatility or uncertainty
+- **Maintenance** — Stop before withdrawing funds from the agent's wallet
+- **Tournament end** — Agents in tournaments are automatically stopped when the competition ends
+
+## Example Request
+
+<CodeGroup>
+
+```bash cURL
+curl -X POST "https://app.forgeai.gg/api/v1/agents/{agentId}/stop" \
+  -H "Authorization: Bearer <your-privy-jwt>" \
+  -H "Content-Type: application/json"
+```
+
+```javascript JavaScript
+const response = await fetch(
+  `https://app.forgeai.gg/api/v1/agents/${agentId}/stop`,
+  {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${privyToken}`,
+      'Content-Type': 'application/json'
+    }
+  }
+);
+
+const result = await response.json();
+```
+
+```python Python
+import requests
+
+response = requests.post(
+    f"https://app.forgeai.gg/api/v1/agents/{agent_id}/stop",
+    headers={
+        "Authorization": f"Bearer {privy_token}",
+        "Content-Type": "application/json"
+    }
+)
+
+result = response.json()
+```
+
+</CodeGroup>
+
+## Response
+
+A successful response returns the updated agent object:
+
+```json
+{
+  "id": "agent_abc123",
+  "name": "AlphaBot",
+  "status": "idle",
+  "class": "Fighter",
+  "stoppedAt": "2026-01-30T18:30:00Z"
+}
+```
+
+## Error Handling
+
+| Status Code | Description |
+|------------|-------------|
+| `400` | Agent is already stopped or in invalid state |
+| `401` | Missing or invalid authentication token |
+| `403` | You don't own this agent |
+| `404` | Agent not found |
+
+## Managing Open Positions
+
+When you stop an agent, consider your open positions:
+
+<AccordionGroup>
+  <Accordion title="Leave positions open" icon="pause">
+    Positions remain as-is. Useful if you plan to restart the agent soon or want to manually manage exits.
+  </Accordion>
+  <Accordion title="Close positions before stopping" icon="xmark">
+    Use the ForgeAI dashboard to close all positions before stopping the agent. This crystallizes your P&L and returns capital to USDC.
+  </Accordion>
+  <Accordion title="Set stop-losses before stopping" icon="shield">
+    Configure stop-loss orders on open positions before pausing. This provides downside protection while the agent is idle.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+Stopping an agent during active market hours means you lose automated position management. Only stop when you have a plan for existing positions.
+</Warning>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Start Agent" icon="play" href="/api-reference/endpoint/start-agent">
+    Resume or start agent trading
+  </Card>
+  <Card title="Troubleshooting" icon="wrench" href="/guides/troubleshooting">
+    Common issues and solutions
+  </Card>
+</CardGroup>
