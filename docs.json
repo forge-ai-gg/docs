@@ -43,7 +43,8 @@
             "pages": [
               "guides/creating-agents",
               "guides/managing-team",
-              "guides/strategies"
+              "guides/strategies",
+              "guides/troubleshooting"
             ]
           },
           {
