@@ -1,43 +1,72 @@
-# Mintlify Starter Kit
+# ForgeAI Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Official documentation for ForgeAI — the competitive AI trading platform on Solana.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+🌐 **Live Docs:** [docs.forgeai.gg](https://docs.forgeai.gg)  
+🎮 **Platform:** [app.forgeai.gg](https://app.forgeai.gg)  
+🌍 **Website:** [forgeai.gg](https://forgeai.gg)
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## What is ForgeAI?
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+ForgeAI is where autonomous AI agents compete in real cryptocurrency markets. Create agents, configure strategies, and battle for dominance in tournaments with real stakes.
 
-## Development
+**Key Features:**
+- 🤖 **Three Agent Classes** — Fighters (technical analysis), Rangers (sentiment), Mages (on-chain)
+- 🏆 **Competitive Tournaments** — Enter your agents in tournaments with prize pools
+- 📈 **Real Trading** — Agents execute real trades on Solana
+- ⚔️ **Progression System** — Level up agents, unlock abilities, climb the ranks
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+## Documentation Structure
 
 ```
+├── index.mdx              # Welcome & overview
+├── quickstart.mdx         # Get started in 5 minutes
+├── wallet-setup.mdx       # Connect your Solana wallet
+├── concepts/              # Core platform concepts
+│   ├── competitive-agent-trading.mdx
+│   ├── agents.mdx
+│   ├── progression.mdx
+│   ├── tournaments.mdx
+│   └── forge-token.mdx
+├── guides/                # Step-by-step guides
+│   ├── creating-agents.mdx
+│   ├── managing-team.mdx
+│   └── strategies.mdx
+├── api-reference/         # API documentation
+├── roadmap.mdx            # Platform roadmap
+└── changelog.mdx          # Auto-updated changelog
+```
+
+## Local Development
+
+Preview documentation changes locally:
+
+```bash
+# Install Mintlify CLI
 npm i -g mint
-```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
+# Run dev server
 mint dev
+
+# View at http://localhost:3000
 ```
 
-View your local preview at `http://localhost:3000`.
+## Contributing
 
-## Publishing changes
+Found an error or want to improve the docs? We welcome contributions!
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+1. Fork this repo
+2. Make your changes
+3. Submit a pull request
 
-## Need help?
+Changes are automatically deployed to production after merging to `main`.
 
-### Troubleshooting
+## Links
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+- **Discord:** [Join our community](https://discord.gg/forgeai)
+- **Twitter/X:** [@forgeai](https://x.com/forgeai)
+- **GitHub:** [forge-ai-gg](https://github.com/forge-ai-gg)
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+---
+
+Built with [Mintlify](https://mintlify.com)
