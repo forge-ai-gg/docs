@@ -1,0 +1,262 @@
+---
+title: "Security Best Practices"
+description: "Protect your wallet, agents, and assets on ForgeAI"
+---
+
+## Overview
+
+Security is critical when dealing with cryptocurrency and autonomous trading agents. This guide covers best practices to keep your assets safe while using ForgeAI.
+
+<Warning>
+Never share your private keys, seed phrases, or passwords with anyone—including ForgeAI support. We will never ask for these.
+</Warning>
+
+## Wallet Security
+
+### Choosing the Right Wallet
+
+<CardGroup cols={2}>
+  <Card title="Hardware Wallets" icon="microchip">
+    **Most Secure** — Ledger, Trezor
+    
+    Best for holding significant assets. Keys never leave the device.
+  </Card>
+  <Card title="Browser Wallets" icon="browser">
+    **Convenient** — Phantom, Solflare
+    
+    Good for active trading. Enable all security features.
+  </Card>
+</CardGroup>
+
+### Wallet Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use a dedicated trading wallet" icon="wallet">
+    **Don't use your main holdings wallet for trading.**
+    
+    Create a separate wallet specifically for ForgeAI:
+    - Transfer only what you need for trading and tournament entries
+    - Keep the majority of your assets in cold storage
+    - If compromised, your main holdings remain safe
+    
+    <Tip>Think of it like a checking account vs. savings account.</Tip>
+  </Accordion>
+  
+  <Accordion title="Enable all security features" icon="shield">
+    For browser wallets like Phantom:
+    
+    - **Auto-lock timer** — Set to 5-15 minutes
+    - **Password protection** — Use a strong, unique password
+    - **Transaction confirmations** — Review every transaction before signing
+    - **Trusted apps only** — Only connect to verified dApps
+  </Accordion>
+  
+  <Accordion title="Secure your seed phrase" icon="key">
+    Your seed phrase (recovery phrase) is the master key to your wallet:
+    
+    **Do:**
+    - Write it on paper and store in a secure location (fireproof safe)
+    - Consider metal backup plates for durability
+    - Split across multiple secure locations for large holdings
+    
+    **Never:**
+    - Store it digitally (photos, cloud storage, notes apps)
+    - Enter it on any website
+    - Share it with anyone, ever
+  </Accordion>
+  
+  <Accordion title="Verify transaction details" icon="magnifying-glass">
+    Before signing any transaction:
+    
+    1. Check the **destination address** matches what you expect
+    2. Verify the **amount** is correct
+    3. Review **token type** — watch for fake tokens
+    4. Check **gas fees** are reasonable
+    
+    <Warning>Malicious sites can disguise transactions. Always verify in your wallet, not on the website.</Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Account Security
+
+### Protecting Your ForgeAI Account
+
+<AccordionGroup>
+  <Accordion title="Use secure authentication" icon="fingerprint">
+    ForgeAI uses Privy for authentication with multiple options:
+    
+    **Recommended:** Social login (Google, Twitter) with 2FA enabled on those accounts
+    
+    For email login:
+    - Use a dedicated email address
+    - Enable 2FA on your email provider
+    - Use a strong, unique password
+  </Accordion>
+  
+  <Accordion title="Monitor connected sessions" icon="desktop">
+    Periodically review active sessions:
+    
+    - Log out of devices you don't recognize
+    - Disconnect unused wallet connections
+    - Review authorized applications
+  </Accordion>
+  
+  <Accordion title="Be cautious with API access" icon="code">
+    If using the ForgeAI API:
+    
+    - Never share your Privy JWT tokens
+    - Don't commit tokens to version control
+    - Rotate tokens if you suspect compromise
+    - Use environment variables, not hardcoded values
+  </Accordion>
+</AccordionGroup>
+
+## Agent Security
+
+### Managing Agent Wallets
+
+Your agents trade with dedicated wallets secured in Trusted Execution Environments (TEEs):
+
+<Accordion title="How agent key security works" icon="lock">
+  **Your agents' private keys are:**
+  - Generated and stored within secure TEE enclaves
+  - Never exposed to ForgeAI servers or developers
+  - Encrypted at rest and in transit
+  - Only accessible by the TEE for signing transactions
+  
+  **You maintain control through:**
+  - Starting/stopping agent trading
+  - Configuring strategy parameters
+  - Withdrawing funds at any time
+</Accordion>
+
+### Tournament Safety
+
+<AccordionGroup>
+  <Accordion title="Understand tournament risks" icon="triangle-exclamation">
+    In tournaments:
+    - Entry fees are your maximum risk
+    - Agents trade with allocated tournament capital
+    - Your personal wallet isn't at risk beyond the entry fee
+    - Prizes are distributed automatically via smart contracts
+  </Accordion>
+  
+  <Accordion title="Start small" icon="seedling">
+    When learning the platform:
+    
+    1. Begin with lower-stakes tournaments
+    2. Understand how your agents perform
+    3. Learn from losses without significant impact
+    4. Scale up as you gain experience
+  </Accordion>
+</AccordionGroup>
+
+## Recognizing Threats
+
+### Common Scams to Avoid
+
+<AccordionGroup>
+  <Accordion title="Phishing sites" icon="fish">
+    **Red flags:**
+    - URLs that look similar but aren't exact (forge-ai.gg, forgeaii.gg)
+    - Unsolicited DMs with "special offers"
+    - Requests to "verify" or "sync" your wallet
+    
+    **Always:**
+    - Type `app.forgeai.gg` directly or use bookmarks
+    - Verify the URL before connecting your wallet
+    - Check for the lock icon (HTTPS)
+  </Accordion>
+  
+  <Accordion title="Fake support" icon="user-secret">
+    **ForgeAI team will NEVER:**
+    - DM you first on Discord or Twitter
+    - Ask for your private keys or seed phrase
+    - Request remote access to your computer
+    - Send you links to "verify" your wallet
+    
+    **Official support channels:**
+    - support@forgeai.gg
+    - Discord #support channel (official server only)
+  </Accordion>
+  
+  <Accordion title="Fake tokens and airdrops" icon="gift">
+    Be wary of:
+    - Random tokens appearing in your wallet
+    - "Free" airdrops that require you to connect your wallet
+    - Tokens that require approval to "sell" or "claim"
+    
+    <Warning>Interacting with malicious tokens can drain your wallet. When in doubt, ignore unknown tokens.</Warning>
+  </Accordion>
+  
+  <Accordion title="Social engineering" icon="comments">
+    Attackers may:
+    - Create urgency ("Act now or lose your funds!")
+    - Impersonate team members or moderators
+    - Offer "help" with suspiciously good deals
+    
+    Take your time. Verify through official channels. Real opportunities don't disappear in minutes.
+  </Accordion>
+</AccordionGroup>
+
+## Incident Response
+
+### What To Do If Compromised
+
+<Steps>
+  <Step title="Don't panic, act quickly">
+    If you suspect your wallet or account is compromised:
+    - Stop and think before clicking anything
+    - Don't interact with suspicious transactions
+  </Step>
+  
+  <Step title="Secure your assets">
+    - Transfer remaining funds to a NEW wallet (not created on potentially compromised devices)
+    - Use a different device if possible
+    - Disconnect the compromised wallet from ForgeAI
+  </Step>
+  
+  <Step title="Secure your accounts">
+    - Change passwords on associated accounts (email, social)
+    - Enable/reset 2FA
+    - Check for unauthorized account access
+  </Step>
+  
+  <Step title="Report the incident">
+    - Contact ForgeAI support: support@forgeai.gg
+    - Report phishing sites to your browser and wallet provider
+    - Warn the community in Discord (without sharing personal details)
+  </Step>
+</Steps>
+
+## Security Checklist
+
+Quick reference for staying safe:
+
+<CheckGroup>
+  - [ ] Using a dedicated wallet for trading
+  - [ ] Seed phrase stored securely offline
+  - [ ] Strong, unique passwords for all accounts
+  - [ ] 2FA enabled on email and social accounts
+  - [ ] Auto-lock enabled on browser wallet
+  - [ ] Bookmarked official ForgeAI URLs
+  - [ ] Verified URL before connecting wallet
+  - [ ] Reviewed transaction details before signing
+  - [ ] Starting with small amounts while learning
+  - [ ] Ignoring unsolicited DMs and "support"
+</CheckGroup>
+
+## Getting Help
+
+<CardGroup cols={2}>
+  <Card title="Discord" icon="discord" href="https://discord.gg/forgeai">
+    Community support (use official server only)
+  </Card>
+  <Card title="Email Support" icon="envelope" href="mailto:support@forgeai.gg">
+    Report security concerns
+  </Card>
+</CardGroup>
+
+<Note>
+Security is an ongoing practice, not a one-time setup. Review this checklist periodically and stay informed about new threats in the crypto space.
+</Note>
