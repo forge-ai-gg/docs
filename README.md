@@ -64,7 +64,7 @@ Changes are automatically deployed to production after merging to `main`.
 ## Links
 
 - **Discord:** [Join our community](https://discord.gg/forgeai)
-- **Twitter/X:** [@forgeai](https://x.com/forgeai)
+- **Twitter/X:** [@forgeai_gg](https://x.com/forgeai_gg)
 - **GitHub:** [forge-ai-gg](https://github.com/forge-ai-gg)
 
 ---
