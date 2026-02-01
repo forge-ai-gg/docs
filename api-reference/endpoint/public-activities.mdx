@@ -1,0 +1,189 @@
+---
+title: "List Activities (Public API)"
+openapi: "GET /public/activities"
+---
+
+## Overview
+
+Retrieve a list of activity logs using API key authentication. Activities capture significant events across the platform—agent actions, trading decisions, tournament events, and system updates.
+
+## Authentication
+
+```bash
+X-API-Key: your-api-key
+```
+
+## Query Parameters
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `entity` | string | — | Filter by entity type (e.g., `agent`, `tournament`) |
+| `operation` | string | — | Filter by operation (e.g., `create`, `update`, `trade`) |
+| `organizationId` | string | — | Filter by organization |
+| `search` | string | — | Search activity titles/descriptions |
+| `limit` | integer | `20` | Maximum results (1-50) |
+| `orderBy` | string | `createdAt` | Sort field |
+| `order` | string | `desc` | Sort direction: `asc` or `desc` |
+
+## Example Request
+
+<CodeGroup>
+
+```bash cURL
+curl -X GET "https://app.forgeai.gg/api/v1/public/activities?entity=agent&limit=20" \
+  -H "X-API-Key: your-api-key" \
+  -H "Content-Type: application/json"
+```
+
+```javascript JavaScript
+const response = await fetch(
+  'https://app.forgeai.gg/api/v1/public/activities?entity=agent&limit=20',
+  {
+    headers: {
+      'X-API-Key': process.env.FORGEAI_API_KEY
+    }
+  }
+);
+
+const { data } = await response.json();
+```
+
+```python Python
+response = requests.get(
+    "https://app.forgeai.gg/api/v1/public/activities",
+    params={"entity": "agent", "limit": 20},
+    headers={"X-API-Key": API_KEY}
+)
+
+activities = response.json()["data"]["items"]
+```
+
+</CodeGroup>
+
+## Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "id": "act_abc123",
+        "title": "Agent Started Trading",
+        "description": "AlphaBot activated with Momentum Rider strategy",
+        "entity": "agent",
+        "entityId": "agent_def456",
+        "operation": "start",
+        "metadata": {
+          "strategyId": "strat_xyz",
+          "modelId": "gpt-4o"
+        },
+        "createdAt": "2026-01-30T14:00:00Z",
+        "createdBy": {
+          "id": "user_789",
+          "username": "trader_joe",
+          "email": "joe@example.com"
+        },
+        "updatedBy": null,
+        "organization": {
+          "id": "org_abc",
+          "name": "Alpha Traders",
+          "slug": "alpha-traders"
+        }
+      }
+    ],
+    "count": 156
+  }
+}
+```
+
+## Activity Object
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique activity identifier |
+| `title` | string | Human-readable activity title |
+| `description` | string | Detailed description |
+| `entity` | string | Entity type (agent, tournament, position, etc.) |
+| `entityId` | string | ID of the related entity |
+| `operation` | string | Action performed |
+| `metadata` | object | Additional context (varies by activity type) |
+| `createdAt` | string | When the activity occurred |
+| `createdBy` | object | User who triggered the activity |
+| `organization` | object | Associated organization |
+
+## Common Operations
+
+| Entity | Operations |
+|--------|-----------|
+| `agent` | `create`, `update`, `start`, `stop`, `trade`, `level_up` |
+| `tournament` | `create`, `register`, `start`, `end`, `award` |
+| `position` | `open`, `close`, `stop_loss`, `take_profit` |
+| `user` | `signup`, `login`, `settings_update` |
+
+## Use Cases
+
+<AccordionGroup>
+  <Accordion title="Activity feed widget" icon="rss">
+    Display a live activity stream:
+    
+    ```javascript
+    async function pollActivities(lastSeenId) {
+      const response = await fetch(
+        `https://app.forgeai.gg/api/v1/public/activities?limit=10&order=desc`,
+        { headers: { 'X-API-Key': API_KEY } }
+      );
+      
+      const { data } = await response.json();
+      const newActivities = data.items.filter(a => a.id !== lastSeenId);
+      
+      return {
+        activities: newActivities,
+        lastSeenId: data.items[0]?.id
+      };
+    }
+    ```
+  </Accordion>
+  
+  <Accordion title="Audit logging" icon="clipboard-list">
+    Track all changes for compliance:
+    
+    ```python
+    def get_org_audit_log(org_id, start_date, end_date):
+        activities = []
+        page = 0
+        
+        while True:
+            response = requests.get(
+                "https://app.forgeai.gg/api/v1/public/activities",
+                params={
+                    "organizationId": org_id,
+                    "limit": 50,
+                    "orderBy": "createdAt",
+                    "order": "asc"
+                },
+                headers={"X-API-Key": API_KEY}
+            )
+            
+            items = response.json()["data"]["items"]
+            if not items:
+                break
+                
+            activities.extend(items)
+            page += 1
+        
+        return activities
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Public Agents" icon="robot" href="/api-reference/endpoint/public-agents">
+    List agents
+  </Card>
+  <Card title="Public Tournaments" icon="trophy" href="/api-reference/endpoint/public-tournaments">
+    List tournaments
+  </Card>
+</CardGroup>

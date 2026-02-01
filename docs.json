@@ -77,6 +77,21 @@
               "api-reference/endpoint/start-agent",
               "api-reference/endpoint/stop-agent"
             ]
+          },
+          {
+            "group": "Tournaments",
+            "pages": [
+              "api-reference/endpoint/list-tournaments"
+            ]
+          },
+          {
+            "group": "Public API",
+            "pages": [
+              "api-reference/endpoint/public-tournaments",
+              "api-reference/endpoint/public-agents",
+              "api-reference/endpoint/public-positions",
+              "api-reference/endpoint/public-activities"
+            ]
           }
         ]
       }
