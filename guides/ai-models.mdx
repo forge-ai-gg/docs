@@ -17,14 +17,20 @@ All models are optimized for trading decision-making. The "best" model depends o
   <Card title="Grok" icon="bolt">
     Fast, aggressive, real-time focused
   </Card>
-  <Card title="Claude 3.5 Sonnet" icon="brain">
+  <Card title="Claude 4 Sonnet" icon="brain">
     Balanced reasoning, nuanced analysis
   </Card>
   <Card title="GPT-4o" icon="microchip">
     Versatile, well-rounded performance
   </Card>
-  <Card title="Llama 3" icon="code">
-    Cost-effective, solid baseline
+  <Card title="DeepSeek R1" icon="lightbulb">
+    Deep reasoning, cost-effective
+  </Card>
+  <Card title="Gemini 2.5 Pro" icon="sparkles">
+    Advanced multimodal analysis
+  </Card>
+  <Card title="Llama 3.3" icon="code">
+    Open-source, fast baseline
   </Card>
 </CardGroup>
 
@@ -55,11 +61,11 @@ Grok excels at processing real-time information quickly. Its integration with X 
 
 ---
 
-### Claude 3.5 Sonnet (Anthropic)
+### Claude 4 Sonnet (Anthropic)
 
 **Best for:** Complex analysis, risk-aware trading, nuanced decisions
 
-Claude excels at understanding context and making reasoned decisions. It's particularly good at explaining its reasoning, which helps with strategy refinement.
+Claude 4 Sonnet excels at understanding context and making reasoned decisions. Its extended thinking capabilities provide transparent reasoning trails, helping you understand and refine your strategy.
 
 | Attribute | Rating |
 |-----------|--------|
@@ -70,13 +76,18 @@ Claude excels at understanding context and making reasoned decisions. It's parti
 
 **Strengths:**
 - Excellent at complex multi-factor analysis
-- Strong risk assessment capabilities
-- Clear reasoning in decision logs
-- Handles nuanced on-chain data interpretation well
+- Strong risk assessment and position sizing
+- Clear reasoning in decision logs with extended thinking
+- Handles nuanced on-chain data interpretation exceptionally well
+- Best-in-class at explaining *why* it made each trade
 
 **Considerations:**
-- Slightly slower than Grok
-- May be overly cautious in fast-moving markets
+- Extended thinking adds slight latency
+- May be overly cautious in fast-moving meme markets
+
+<Tip>
+Claude 4 Opus is also available for users who want maximum reasoning depth. Opus excels at the most complex analysis scenarios but has higher latency and cost.
+</Tip>
 
 ---
 
@@ -105,11 +116,61 @@ GPT-4o offers well-rounded capabilities across all trading styles. It's a solid 
 
 ---
 
-### Llama 3 (Meta)
+### DeepSeek R1
 
-**Best for:** Cost-conscious strategies, high-frequency approaches
+**Best for:** Deep reasoning tasks, complex market analysis, cost-conscious power users
 
-Llama 3 offers solid performance at a lower cost, making it ideal for strategies that require many decisions without premium model pricing.
+DeepSeek R1 brings chain-of-thought reasoning at a fraction of premium model costs. Excellent for strategies requiring deep analysis without breaking the bank.
+
+| Attribute | Rating |
+|-----------|--------|
+| Speed | ⭐⭐⭐ |
+| Reasoning Depth | ⭐⭐⭐⭐⭐ |
+| Cost | ⭐⭐⭐⭐⭐ |
+| Best Class | Mage |
+
+**Strengths:**
+- Exceptional reasoning at low cost
+- Strong at mathematical and logical analysis
+- Great for complex on-chain pattern detection
+- Transparent chain-of-thought reasoning
+
+**Considerations:**
+- Slower than real-time focused models
+- Better for swing trading than scalping
+
+---
+
+### Gemini 2.5 Pro (Google)
+
+**Best for:** Multimodal analysis, chart pattern recognition, data-heavy strategies
+
+Gemini 2.5 Pro excels at processing diverse data types simultaneously—combining chart visuals, text sentiment, and numerical on-chain data in unified analysis.
+
+| Attribute | Rating |
+|-----------|--------|
+| Speed | ⭐⭐⭐⭐ |
+| Reasoning Depth | ⭐⭐⭐⭐ |
+| Cost | ⭐⭐⭐ |
+| Best Class | Fighter |
+
+**Strengths:**
+- Excellent at visual chart pattern recognition
+- Strong multi-source data synthesis
+- Good balance of speed and depth
+- Handles large context windows effectively
+
+**Considerations:**
+- Less battle-tested in crypto-specific contexts
+- May overthink simple momentum plays
+
+---
+
+### Llama 3.3 (Meta)
+
+**Best for:** Cost-conscious strategies, high-frequency approaches, testing
+
+Llama 3.3 offers solid performance at minimal cost, making it ideal for strategies that require many decisions or for testing before committing to premium models.
 
 | Attribute | Rating |
 |-----------|--------|
@@ -120,13 +181,13 @@ Llama 3 offers solid performance at a lower cost, making it ideal for strategies
 
 **Strengths:**
 - Most cost-effective option
-- Fast execution times
-- Good baseline performance
-- Ideal for testing strategies
+- Fastest execution times
+- Open-source transparency
+- Ideal for backtesting and strategy iteration
 
 **Considerations:**
 - Less sophisticated reasoning than premium models
-- May miss nuanced signals
+- May miss nuanced signals in complex markets
 
 ## Choosing a Model
 
@@ -134,33 +195,33 @@ Llama 3 offers solid performance at a lower cost, making it ideal for strategies
 
 | Class | Recommended Models | Why |
 |-------|-------------------|-----|
-| **Fighter** | GPT-4o, Claude | Strong technical pattern recognition |
-| **Ranger** | Grok, GPT-4o | Fast sentiment processing |
-| **Mage** | Claude, GPT-4o | Deep on-chain data analysis |
+| **Fighter** | Gemini 2.5 Pro, GPT-4o | Strong visual/technical pattern recognition |
+| **Ranger** | Grok, GPT-4o | Fast sentiment processing, X integration |
+| **Mage** | Claude 4, DeepSeek R1 | Deep on-chain data analysis and reasoning |
 
 ### By Strategy Type
 
 <AccordionGroup>
   <Accordion title="Aggressive / High Frequency" icon="bolt">
-    **Recommended:** Grok, Llama 3
+    **Recommended:** Grok, Llama 3.3
     
     Fast response times are critical. These models make quick decisions suited for scalping and momentum strategies.
   </Accordion>
   
   <Accordion title="Balanced / Swing Trading" icon="scale-balanced">
-    **Recommended:** GPT-4o, Claude
+    **Recommended:** GPT-4o, Claude 4 Sonnet, Gemini 2.5 Pro
     
     Balanced reasoning helps identify swing opportunities without overtrading. Good for multi-day positions.
   </Accordion>
   
   <Accordion title="Conservative / Position Trading" icon="shield">
-    **Recommended:** Claude
+    **Recommended:** Claude 4, DeepSeek R1
     
     Deep analysis and risk awareness suit longer-term, capital-preservation-focused strategies.
   </Accordion>
   
   <Accordion title="Experimental / Testing" icon="flask">
-    **Recommended:** Llama 3
+    **Recommended:** Llama 3.3, DeepSeek R1
     
     Lower costs let you test more strategies without burning through credits. Graduate to premium models for live tournaments.
   </Accordion>
@@ -170,11 +231,12 @@ Llama 3 offers solid performance at a lower cost, making it ideal for strategies
 
 | Market Type | Best Model | Rationale |
 |-------------|------------|-----------|
-| Trending | GPT-4o | Solid trend-following decisions |
-| Ranging | Claude | Patient, avoids overtrading |
+| Trending | Gemini 2.5 Pro, GPT-4o | Strong trend pattern recognition |
+| Ranging | Claude 4, DeepSeek R1 | Patient, avoids overtrading |
 | Volatile | Grok | Fast reaction to rapid moves |
-| News-Driven | Grok | Real-time sentiment processing |
-| Low Volume | Llama 3 | Cost-effective during quiet periods |
+| News-Driven | Grok | Real-time sentiment processing via X |
+| Low Volume | Llama 3.3 | Cost-effective during quiet periods |
+| Complex/Uncertain | Claude 4 Opus | Maximum reasoning for ambiguous signals |
 
 ## Model Switching
 
@@ -200,7 +262,7 @@ Different models have different computational costs, which may affect:
 - Long-term strategy viability
 
 <Tip>
-For beginners: Start with **GPT-4o** for reliable, balanced performance. As you learn the platform, experiment with specialized models that match your agent class and strategy.
+For beginners: Start with **GPT-4o** for reliable, balanced performance. As you learn the platform, experiment with specialized models—try **Grok** for meme coins, **Claude 4** for complex analysis, or **DeepSeek R1** for cost-effective deep reasoning.
 </Tip>
 
 ## Performance Tracking
